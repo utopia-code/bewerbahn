@@ -1,0 +1,887 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+/* Movil landscape ----------------------------------------------------------------- */
+
+@media screen and (max-width:830px) and (orientation: landscape) {
+    
+/* header --------------------------------------------- */
+    #kopfkontakt {
+        height:100%;
+        background: url(../forall/portrait.jpg) no-repeat center bottom;
+        background-size: cover;
+        position: relative;
+    }
+
+    /* main ----------------------------------------------------------------- */
+    #formular {
+        background:#D7E1E0; /* lightblue ------------------ */
+    }
+    #formular h2 {
+        font: 500 200% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: center;
+        margin:2%;
+    }
+    #formular h3 {
+        font: 500 100% Advent Pro;
+        letter-spacing: .9px;
+        color: #FF1414;
+        text-align: right;
+        margin: -15px 0 10px;
+        line-height: 10px;
+    }
+    #kontakt {
+        padding:1%;
+    }
+    #kontakt textarea, input {
+        font:500 16px Lekton;
+        color:#36689A;
+        outline:none;
+        border:none;
+        margin:.5% ;
+        
+    }
+    #kontakt input[type="text"] {
+        float: left;
+        width: 49%;
+        line-height: 40px;
+        padding:0 1%;
+    }
+    #kontakt input[type="submit"]{
+        background: #36689A;
+        color: #D7E1E0;
+        font-weight: 800;
+        width: 50%;
+        margin-left: 25%;
+        line-height: 40px;
+        padding:0 1%;
+    }
+    #kontakt input[type="submit"]:hover {
+        background: rgba(54,104,154,0.6);
+    }
+    #kontakt textarea {
+        width: 99%;
+        padding: .5%;
+        height: 40px;
+        line-height: 40px;
+        padding:0% 1% 0;
+    }
+    #kontakt .checker {
+        font:500 90% Lekton;
+        color: #36689A;
+        text-align: center;
+        line-height: 30px;
+        margin:2% 10%;
+    }
+    #kontakt input[type="checkbox"] {
+        margin: 0; 
+    }
+    #kontakt .checker a {
+        text-decoration: none;
+        color:red;
+    }
+    #daten {
+        background:#36689A;
+        padding:3% 2% 10%;
+        color:#D7E1E0;
+    }
+    #daten h2, #daten h3 {
+        color: #00DBFF;
+    }
+    #daten div {
+        padding: 0 5%;
+    }
+    #daten i {
+        font-size: 100%;
+        float:left;
+        width: 15%;
+        padding:3%;
+        text-align: center; 
+    }
+    #daten p {
+        font:500 16px Lekton;
+        padding:3% 5%;
+    }
+    #daten a {
+        text-decoration: none;
+        color:#D7E1E0;
+    }
+    #daten a[href]:hover{
+        color:#FF1414;
+    }
+    #lebenslauf {
+        background: #D7E1E0;
+        padding:5% 2%;
+    }
+    #lebenslauf > p{
+        font:500 100% Lekton;
+        margin-bottom: 5%;
+        line-height: 30px;
+        text-align: center;
+        color:#36689A;
+    }
+    #lebenslauf a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+    }
+    #lebenslauf > p > a:hover{
+        text-decoration: underline;
+    }
+    #lebenslauf > button > a{
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #lebenslauf > button > i {
+        color: #FF1414;
+        font-size: 16px;
+        padding: 0 1%;
+    }
+    #lebenslauf > button {
+        width: 95%;
+        margin-left:2%;
+        padding: 0 5%;
+        background: #fff;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+        line-height: 40px;
+    }
+    #zeugniss {
+        background: #36689A;
+        padding:5% 2%;
+    }
+    #zeugniss h2, #zeugniss h3 {
+        color: #00DBFF;
+    }
+    #zeugniss p{
+        font:500 100% Lekton;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#D7E1E0;
+    }
+    #zeugniss a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+    }
+    #zeugniss a[href="#eMail"] {
+        color: #00DBFF;
+    }
+    #zeugniss a[href="#eMail"]:hover{
+        text-decoration: underline;
+    }
+    #zeugniss > button > a{
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    #zeugniss > button > i {
+        color: #FF1414;
+        font-size: 16px;
+        padding: 0 5%;
+    }
+    #zeugniss > button {
+        width: 95%;
+        margin-left:2%;
+        padding: 0 5%;
+        background: #D7E1E0;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+        line-height: 40px;
+    }
+    #lebenslauf input[type="text"],[type="password"],[type='submit']{
+        width: 40%;
+        line-height: 40px; 
+        margin-left:30%;
+    }
+    #lebenslauf > form > p{
+        color:red;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+/* Tablet -------------------------------------------------------------------------- */
+
+@media screen and (max-width:620px) and (orientation: portrait) {
+/* header --------------------------------------------- */
+    #kopfkontakt {
+        height:100%;
+        background: url(../forall/portrait.jpg) no-repeat center bottom;
+        background-size: cover;
+        position: relative;
+    }
+    #kopfkontakt h1 {
+        padding-top: 95%;
+    }
+
+    /* main ----------------------------------------------------------------- */
+    #formular {
+        background:#D7E1E0;
+    }
+    #formular h2 {
+        font: 500 200% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: center;
+        margin:2%;
+    }
+    #formular h3 {
+        font: 500 100% Advent Pro;
+        letter-spacing: .5px;
+        color: #FF1414;
+        text-align: right;
+        margin: 0 0 20px;
+        line-height: 30px;
+    }
+    #kontakt {
+        padding:2%;
+    }
+    #kontakt textarea, input {
+        font:500 16px Lekton;
+        color:#36689A;
+        outline:none;
+        border:none;
+        margin:2% 1%;
+    }
+    #kontakt input[type="text"] {
+        width: 98%;
+        line-height: 40px;
+        padding: 1%;
+    }
+    #kontakt input[type="submit"]{
+        background: #36689A;
+        color: #D7E1E0;
+        font-weight: 500;
+        width: 50%;
+        margin-left: 25%;
+        line-height: 40px;
+    }
+    #kontakt input[type="submit"]:hover {
+        background: rgba(54,104,154,0.6);
+    }
+    #kontakt textarea {
+        width: 98%;
+        padding: 1%;
+    }
+    #kontakt .checker {
+        font:500 90% Lekton;
+        color: #36689A;
+        text-align: center;
+        line-height: 30px;
+        margin:2% 10%;
+    }
+    #kontakt input[type="checkbox"] {
+        margin: 0; 
+    }
+    #kontakt .checker a {
+        text-decoration: none;
+        color:red;
+    }
+    #daten {
+        background:#36689A;
+        padding:3% 2% 15%;
+        color:#D7E1E0;
+    }
+    #daten h2, #daten h3 {
+        color: #00DBFF;
+    }
+    #daten div {
+        padding: 0 5%;
+    }
+    #daten i {
+        font-size: 100%;
+        float:left;
+        width: 15%;
+        padding:4%;
+        text-align: center; 
+    }
+    #daten p {
+        font:500 16px Lekton;
+        padding:5%;
+    }
+    #daten a {
+        text-decoration: none;
+        color:#D7E1E0;
+    }
+    #daten a[href]:hover{
+        color:#FF1414;
+    }
+    #lebenslauf {
+        background: #D7E1E0;
+        padding:15% 2%;
+    }
+    #lebenslauf > p{
+        font:500 100% Lekton;
+        margin-bottom: 5%;
+        line-height: 30px;
+        text-align: center;
+        color:#36689A;
+    }
+    #lebenslauf a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+    }
+    #lebenslauf > p > a:hover{
+        text-decoration: underline;
+    }
+    #lebenslauf > button > a{
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 40px
+    }
+    #lebenslauf > button > i {
+        color: #FF1414;
+        font-size: 16px;
+        padding: 0 1%;
+    }
+    #lebenslauf > button {
+        width: 95%;
+        margin-left:2%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #fff;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+    }
+    #zeugniss {
+        background: #36689A;
+        padding:15% 2%;
+    }
+    #zeugniss h2, #zeugniss h3 {
+        color: #00DBFF;
+    }
+    #zeugniss p{
+        font:500 100% Lekton;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#D7E1E0;
+    }
+    #zeugniss a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+    }
+    #zeugniss a[href="#eMail"] {
+        color: #00DBFF;
+    }
+    #zeugniss a[href="#eMail"]:hover{
+        text-decoration: underline;
+    }
+    #zeugniss > button > a{
+        margin-left: 5%;
+        font-size: 16px;
+        line-height: 40px
+    }
+    #zeugniss > button > i {
+        color: #FF1414;
+        font-size: 16px;
+        padding: 0 5%;
+    }
+    #zeugniss > button {
+        width: 95%;
+        margin-left:2%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #D7E1E0;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+    }
+    #lebenslauf input[type="text"],[type="password"],[type='submit']{
+        width: 40%;
+        line-height: 40px; 
+        margin-left:30%;
+    }
+    #lebenslauf > form > p{
+        color:red;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+/* Desktop landscape ------------------------------------------------------------ */
+
+@media screen and (min-width:831px) and (orientation: landscape) {
+    
+    /* header --------------------------------------------- */
+    #kopfkontakt {
+        height:100%;
+        background: url(../forall/portrait.jpg) no-repeat center bottom;
+        background-size: cover;
+        position: relative;
+    }
+    #kopfkontakt h1 {
+        padding-top: 95%;
+    }
+
+    /* main ----------------------------------------------------------------- */
+    #formular {
+        background:#D7E1E0;
+    }
+    #formular h2 {
+        font: 500 300% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: center;
+        margin: 5% 0;
+    }
+    #formular h3 {
+        font: 500 120% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: right;
+        margin: 0 0 5%;
+    }
+    #kontakt {
+        background: #fff;
+        margin:0 15vw;
+        padding:5%;
+    }
+    #kontakt textarea, input {
+        font:500 110% Lekton;
+        color:#36689A;
+        margin:2%;
+    }
+    #kontakt input[type="text"] {
+        float:left;
+        width: 44%;
+        line-height: 40px;
+        outline: none;
+        border-style: none; 
+        padding: 0 0 0 1%;
+        border: 1px solid #ddd;
+    }
+    #kontakt input[type="submit"]{
+        background: #36689A;
+        color: #D7E1E0;
+        font-weight: 500;
+        border-style: none;
+        width: 30%;
+        margin-left: 35%;
+        line-height: 40px;
+    }
+    #kontakt input[type="submit"]:hover {
+        background: rgba(54,104,154,0.5);
+    }
+    #kontakt textarea {
+        margin-left: 17.5%;
+        width: 65%;
+        padding:0 0 0 1%;
+        border-style:none;
+        outline:none;
+        border: 1px solid #ddd;
+        
+    }
+    #kontakt .checker {
+        font:500 90% Lekton;
+        color: #36689A;
+        text-align: center;
+        line-height: 30px;
+        margin:0 10%;
+    }
+    #kontakt input[type="checkbox"] {
+        margin: 0;
+    }
+    #kontakt .checker a {
+        text-decoration: none;
+        color:red;
+    }
+    #daten {
+        background:#36689A;
+        margin:0 15%;
+        padding: 5%;
+        color:#D7E1E0;
+    }
+    #daten h2, #daten h3 {
+        color: #00DBFF;
+    }
+    #daten div {
+        padding: 0 5%;
+    }
+    #daten i {
+        font-size: 180%;
+        float:left;
+        width: 15%;
+        padding:4%;
+        text-align: center; 
+    }
+    #daten p {
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+    }
+    #daten a {
+        text-decoration: none;
+        color:#D7E1E0;
+    }
+    #daten a[href]:hover{
+        color:#FF1414;
+    }
+    #lebenslauf {
+        background: #fff;
+        margin:0 15%;
+        padding:5%;
+    }
+    #lebenslauf > p{
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#36689A;
+    }
+    #lebenslauf a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+        font-size: 20px;
+    }
+    #lebenslauf > p > a:hover{
+        text-decoration: underline;
+    }
+    #lebenslauf > button > a{
+        margin-left: 5%;
+    }
+    #lebenslauf > button > i {
+        color: #FF1414;
+        font-size: 2vw;
+        padding: 0 5%;
+    }
+    #lebenslauf > button {
+        width: 50%;
+        margin-left:25%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #D7E1E0;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+    }
+    #zeugniss {
+        background: #36689A;
+        margin:0 15%;
+        padding:5%;
+    }
+    #zeugniss h2, #zeugniss h3 {
+        color: #00DBFF;
+    }
+    #zeugniss p{
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#D7E1E0;
+    }
+    #zeugniss a[href="#eMail"] {
+        color: #00DBFF;
+    }
+    #zeugniss a[href="#eMail"]:hover{
+        text-decoration: underline;
+    }
+    #zeugniss a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+        font-size: 20px;
+    }
+    #zeugniss > button > a{
+        margin-left: 5%;
+    }
+    #zeugniss > button > i {
+        color: #FF1414;
+        font-size: 2vw;
+        padding: 0 5%;
+    }
+    #zeugniss > button {
+        width: 50%;
+        margin-left:25%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #D7E1E0;
+        outline: none;
+        border: none; 
+        cursor: pointer;
+    }
+    #lebenslauf input[type="text"],[type="password"],[type='submit']{
+        width: 40%;
+        line-height: 40px; 
+        margin-left:30%;
+        outline: none;
+        border-style: none; 
+        padding: 0 0 0 1%;
+        border: 1px solid #ddd; 
+    }
+    #lebenslauf > form > p{
+        color:red;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+
+
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+/* Desktop -------------------------------------------------------------------------- */
+
+@media screen and (min-width:621px) and (orientation: portrait) {
+
+
+    /* header --------------------------------------------- */
+    #kopfkontakt {
+        height:100%;
+        background: url(../forall/portrait.jpg) no-repeat center bottom;
+        background-size: cover;
+        position: relative;
+    }
+    #kopfkontakt h1 {
+        padding-top: 95%;
+    }
+
+    /* main ----------------------------------------------------------------- */
+    #formular {
+        background:#D7E1E0;
+    }
+    #formular h2 {
+        font: 500 300% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: center;
+        margin: 5% 0;
+    }
+    #formular h3 {
+        font: 500 120% Advent Pro;
+        letter-spacing: 5px;
+        color: #FF1414;
+        text-align: right;
+        margin: 0 0 5%;
+    }
+    #kontakt {
+        background: #fff;
+        margin:0 15%;
+        padding:5%;
+    }
+    #kontakt textarea, input {
+        font:500 110% Lekton;
+        color:#36689A;
+        margin:2%;
+    }
+    #kontakt input[type="text"] {
+        float:left;
+        width: 44%;
+        line-height: 40px;
+        outline: none;
+        border-style: none; 
+        padding: 0 0 0 1%;
+        border: 1px solid #ddd;
+    }
+    #kontakt input[type="submit"]{
+        background: #36689A;
+        color: #D7E1E0;
+        font-weight: 500;
+        border-style: none;
+        width: 30%;
+        margin-left: 35%;
+        line-height: 40px;
+    }
+    #kontakt input[type="submit"]:hover {
+        background: rgba(54,104,154,0.5);
+    }
+    #kontakt textarea {
+        margin-left: 17.5%;
+        width: 65%;
+        padding: 0 0 0 1%;
+        border-style:none;
+        outline:none;
+        border: 1px solid #ddd;
+        
+    }
+    #kontakt .checker {
+        font:500 90% Lekton;
+        color: #36689A;
+        text-align: center;
+        line-height: 30px;
+        margin:0 10%;
+    }
+    #kontakt input[type="checkbox"] {
+        margin: 0;
+    }
+    #kontakt .checker a {
+        text-decoration: none;
+        color:red;
+    }
+    #daten {
+        background:#36689A;
+        margin:0 15%;
+        padding: 5%;
+        color:#D7E1E0;
+    }
+    #daten h2, #daten h3 {
+        color: #00DBFF;
+    }
+    #daten div {
+        padding: 0 5%;
+    }
+    #daten i {
+        font-size: 180%;
+        float:left;
+        width: 15%;
+        padding:4%;
+        text-align: center; 
+    }
+    #daten p {
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+    }
+    #daten a {
+        text-decoration: none;
+        color:#D7E1E0;
+    }
+    #daten a[href]:hover{
+        color:#FF1414;
+    }
+    #lebenslauf {
+        background: #fff;
+        margin:0 15%;
+        padding:5%;
+    }
+    #lebenslauf > p{
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#36689A;
+    }
+    #lebenslauf a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+        font-size: 20px;
+    }
+    #lebenslauf > p > a:hover{
+        text-decoration: underline;
+    }
+    #lebenslauf > button > a{
+        margin-left: 5%;
+    }
+    #lebenslauf > button > i {
+        color: #FF1414;
+        font-size: 2vw;
+        padding: 0 5%;
+    }
+    #lebenslauf > button {
+        width: 50%;
+        margin-left:25%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #D7E1E0;
+        outline: none;
+        border: none;  
+        cursor:pointer;
+    }
+    #zeugniss {
+        background: #36689A;
+        margin:0 15%;
+        padding:5%;
+    }
+    #zeugniss h2, #zeugniss h3 {
+        color: #00DBFF;
+    }
+    #zeugniss p{
+        font:500 100% Lekton;
+        font-size: 20px;
+        padding:5%;
+        margin-bottom: 5%;
+        line-height: 40px;
+        text-align: center;
+        color:#D7E1E0;
+    }
+    #zeugniss a[href="#eMail"] {
+        color: #00DBFF;
+    }
+    #zeugniss a[href="#eMail"]:hover{
+        text-decoration: underline;
+    }
+    #zeugniss a{
+        text-decoration:none;
+        color:#FF1414;
+        font:500 100% Lekton;
+        font-size: 20px;
+    }
+    #zeugniss > button > a{
+        margin-left: 5%;
+    }
+    #zeugniss > button > i {
+        color: #FF1414;
+        font-size: 2vw;
+        padding: 0 5%;
+    }
+    #zeugniss > button {
+        width: 50%;
+        margin-left:25%;
+        padding: 1% 5%;
+        line-height: 40px;
+        background: #D7E1E0;
+        outline: none;
+        border: none; 
+        cursor: pointer;
+    }
+    #lebenslauf input[type="text"],[type="password"],[type='submit']{
+        width: 40%;
+        line-height: 40px; 
+        margin-left:30%;
+        outline: none;
+        border-style: none; 
+        padding: 0 0 0 1%;
+        border: 1px solid #ddd;
+    }
+    #lebenslauf > form > p{
+        color:red;
+        font-size: 18px;
+        font-weight: bold;
+    }
+}

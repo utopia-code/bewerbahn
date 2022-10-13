@@ -1,0 +1,2619 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+			font-family: Orbitron500;
+			src:url(../fonts/orbitron-v9-latin/orbitron-v9-latin-500.ttf) format('truetype'),
+			url(../fonts/orbitron-v9-latin/orbitron-v9-latin-500.woff) format('woff'); 
+			}
+@font-face {
+			font-family: OrbitronRegular;
+			src:url(../fonts/orbitron-v9-latin/orbitron-v9-latin-regular.ttf) format('truetype'),
+			url(../fonts/orbitron-v9-latin/orbitron-v9-latin-regular.woff) format('woff'); 
+			}
+@font-face {
+			font-family: Advent Pro;
+			src:url(../fonts/advent-pro-v7-latin/advent-pro-v7-latin-700.ttf) format('truetype'),
+			url(../fonts/advent-pro-v7-latin/advent-pro-v7-latin-700.woff) format('woff');
+			}
+@font-face {
+			font-family: Lekton;
+			src:url(../fonts/lekton-v8-latin/lekton-v8-latin-regular.ttf) format('truetype'),
+			url(../fonts/lekton-v8-latin/lekton-v8-latin-regular.woff) format('woff');
+			}
+@font-face {
+			font-family: Barcode;
+			src:url(../fonts/libre-barcode-39-text-v7-latin/libre-barcode-39-text-v7-latin-regular.ttf) format('truetype'),
+			url(../fonts/libre-barcode-39-text-v7-latin/libre-barcode-39-text-v7-latin-regular.woff) format('woff');
+			}
+@font-face {
+			font-family: Iceland;
+			src:url(../fonts/iceland-v6-latin/iceland-v6-latin-regular.ttf) format('truetype'),
+			url(../fonts/iceland-v6-latin/iceland-v6-latin-regular.woff) format('woff');
+			}
+/* General -------------------------------------------------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+#navchecker {
+	display: none;
+}
+
+
+
+/* Mobile Horizontal ------ logo 2.2vh -------------------------------------------- */
+/* Mobile Horizontal ------------------------------------------------------------- */
+/* Mobile Horizontal ------------------------------------------------------------- */
+/* Mobile Horizontal ------------------------------------------------------------- */
+/* Mobile Horizontal ------------------------------------------------------------- */
+/* Mobile Horizontal ------------------------------------------------------------- */
+
+@media screen and (max-width: 830px) and (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 3)
+    and (max-device-width: 812px)
+    and (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 2)
+    and (max-device-width: 683px) /* 683*/
+    and (orientation: landscape)
+{
+
+    body, html {
+        font:16px Lekton, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    /* header ---------------------------------------------------------------- */
+    #hero {
+        height: 100%;
+        background-image: linear-gradient(49deg, rgba(54,104,154,.8) 45%, rgba(255,20,20,0.6) 75%), url(../home/DSC07460.JPG);
+        background-size: cover;
+        background-position: center bottom;
+        position:relative;
+    }
+    #hero > h1 {
+        position:absolute;
+        bottom:17%;
+        left:50.5%;
+        font:500 30px Iceland;
+        line-height: 8.5vh;
+        color:#D7E1E0;
+    }
+    #hero > h3 {
+        display: none;
+    }
+    #down {
+        position:absolute;
+        bottom:1%;
+        left:49%;
+        height: 40px;
+        width: 40px;
+        margin:auto;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 800;
+    }
+    #down #rel {
+        position:relative;
+        height: 40px;
+        width: 40px;
+    }
+    #down a {
+        position:absolute;
+        top:-5px;
+        left:8px;
+        font-size: 40px;
+        color:#D7E1E0;
+        text-decoration: none;
+        text-align: center;
+        z-index: 8;
+    }
+    #down:hover {
+        background: rgba(255,255,255,0.3);
+        border-radius:50%;
+    }
+
+    /* Hauptnav ----------------------------------------------------------------------------- */
+    
+    #hauptnav {
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #36689A;
+        z-index: 1000;
+        transition: all 1s;
+    }
+    #navchecker:checked ~ #hauptnav  {
+        top:0;
+    }
+    #hauptnav > h2 {
+        position:fixed;
+        top:0;
+        right: 5px;
+        z-index:1001;
+    }
+    #hauptnav > h2 > label {
+        display: block;
+        cursor:pointer;
+    }
+    #hauptnav > h2 > label:after {
+        content:"\2630";
+        color:#D7E1E0;
+        font-size:25px;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#36689A; 
+    }
+    #navchecker:checked ~ #hauptnav h2 label:after{
+        content:"\2715";
+        color:#D7E1E0;
+        font-size:30px; /* Kreuz ................................... */
+    }
+    #navchecker:checked ~ #hauptnav h2:hover label:after {
+        color:#FF1414;
+    }
+    #hauptnav > ul, #hauptnav > ul > li > ul {
+        list-style: none;
+    }
+    #hauptnav > ul > li {
+        width: 46%;
+        height: 42vh;
+        float:left;
+        padding:1% 2% 1%;
+    }
+    #hauptnav ul li a  {
+        text-decoration: none;
+        color:#D7E1E0;
+        font: 200 16px OrbitronRegular;
+        letter-spacing: 0.3vw;
+    }
+    #hauptnav ul li a:hover {
+        color:#00DBFF;
+    }
+    #hauptnav > ul > li > a {
+        font: 500 24px Iceland;
+        border-bottom: 3px solid #FF1414;
+        display:block;
+        text-align: left;
+        margin:0 2% 0 0;
+    }
+    #hautpnav > ul > li > ul {
+        padding-top: 1%;
+    }
+    #hauptnav > ul > li > ul > li {
+        text-align: right;
+        margin-right:5%;
+    }
+    #hauptnav > ul > li > ul > li > span {
+        color:#FF1414;
+        font-size: 118%;
+        text-align: right;
+    }
+    #hauptnav > ul > li > ul > li:first-child {
+        padding-top: 1%;
+    }
+    #hauptnav .small {
+        font-size:16px;
+    }
+    /* Topnav ---------------------------------------------------------------- */
+    #logo {
+        position:fixed;
+        top:2.2vh;
+        left:1%;
+        width: 10%;
+        z-index: 901;
+        
+    }
+    #logo a {
+        font: 150% Orbitron500;
+        color:#D7E1E0;
+        text-decoration: none;
+    }
+    #logo > a:hover {
+        color:#36689A;
+    }
+    #topnav {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+        z-index:999;
+        transition: all 1s;
+    }
+    #topnav.background {
+        background:#fff;   /*rgba(255,20,20,0.5)*/
+    }
+    
+
+    /* main ----------------------------------------------------------------- */
+    
+    #bild {
+      /*background: url(../home/CamaraVirtual.jpg)no-repeat center fixed;
+        background-size: cover;*/
+        background-color:#FF1414;
+    }
+    /* article 1 -------------------------------------------------- */
+    article#bewerbahn {
+        text-align: center;
+    }
+    article#bewerbahn > header {
+        padding:10% 2% 5%;
+    }
+    article#bewerbahn h2 {
+        font:500 200% OrbitronRegular;
+        color:#00DBFF;
+    }
+    article#bewerbahn h2 > span {
+        font:500 90% Orbitron500;
+        padding: 0 2%;
+    }
+    article#bewerbahn section{
+        height: 625px;
+        color:#36689A;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding: 15% 1% 10%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 11%, #fff 11%, #fff 89%, transparent 89%);
+    }
+    article#bewerbahn section > p {
+        padding-bottom: 25px;
+    }
+    article#bewerbahn section > p > span {
+        font:800 16px Lekton;
+        color:#00DBFF;
+    }
+    /* article 2 -------------------------------------------------- */
+    article#muster {
+        text-align: center;
+        
+    }
+    article#muster > header {
+        padding:10% 2% 5%;
+    }
+    article#muster h2 {
+        font:500 200% OrbitronRegular;
+        color:#fff;
+    }
+    article#muster > section {
+        color:#fff;
+        height: 560px;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:15% 1% 10%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 12%, #00DBFF 12%, #00DBFF 88%, transparent 88%);
+    }
+    article#muster > section > p {
+        padding-bottom: 25px;
+    }
+    article#muster > section > p > span {
+        color:#36689A;
+        font-weight: 800;
+    }
+    article#muster > section > p:first-child {
+        font:500 18px Orbitron500;
+        color:#36689A;
+        letter-spacing: 4px;
+        padding-bottom: 25px;
+    }
+     
+    article#muster > section a {
+        font:500 25px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 30px;
+        padding: 2%;
+    }
+    article#muster >section i{
+        font-size:15px;
+        color:#FF1414;
+    }
+    /* article 3 -------------------------------------------------- */
+    article#kreis {
+        text-align:center;
+    }
+    article#kreis > header {
+        padding:10% 2% 5%;
+    }
+    article#kreis h2 {
+        color:#D7E1E0;
+        font:500 200% OrbitronRegular;
+    }
+    article#kreis > section {
+        color:#36689A;
+        height: 480px;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:10% 0 10%;
+        line-height: 30px;
+        overflow: hidden;
+        background: linear-gradient(355deg, transparent 14%, #D7E1E0 14%, #D7E1E0 87%, transparent 87%);
+    }
+    article#kreis .linerechts {
+        font:500 26px Advent Pro;
+        margin-left: -10px;
+        overflow: hidden;
+        letter-spacing: .2px;
+    }
+    article#kreis .linerechts > span {
+        font:500 28px Advent Pro;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        color:#D7E1E0;
+        overflow: hidden;
+    }
+    article#kreis > section > p:first-of-type {
+        padding-top: 20px;
+    }
+    article#kreis > section > p {
+        padding: 0 1% 20px;
+    }
+    article#kreis > section a {
+        font:500 30px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 40px;
+        padding: 3%;
+    }
+    article#kreis >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 4 -------------------------------------------------- */
+    article#vorstellung {
+        text-align: center;
+    }
+    article#vorstellung > header {
+        padding:10% 2% 5%;
+    }
+    article#vorstellung > header h2 {
+        font:500 200% OrbitronRegular;
+        color:#fff;
+    }
+    article#vorstellung > section {
+        color:#36689A;
+        height: 660px;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:15% 1% 10%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 13%, #00DBFF 7%, #00DBFF 90%, transparent 90%);
+    }
+    article#vorstellung > section > p, h3 {
+        padding-bottom: 20px;
+    }
+    article#vorstellung > section > p:last-of-type {
+        padding-bottom: 10px;
+    }
+    article#vorstellung > section > h3 {
+        display: none
+    }
+    article#vorstellung > section > p > span {
+        color:#D7E1E0;
+        font-weight: 800;
+    }
+    article#vorstellung > section > ul {
+        list-style: none;
+        margin: auto;
+        width: 100%;
+    }
+    article#vorstellung > section > ul > li {
+        display: inline-block;
+        width: 20%;
+    }
+    article#vorstellung > section > ul > li.klein {
+        width: 29%
+    }
+    article#vorstellung > section a {
+        font:500 20px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height:40px;
+        padding: 1% ;
+    }
+    article#vorstellung >section i{
+        font-size:16px;
+        color:#FF1414;
+    }
+    /* Pfeil nach oben --------------------------------------- */
+    #back-top {
+        position: fixed;
+        right: 2%;
+        bottom: 6%;
+        display:none;
+        z-index: 700;
+    }
+    #back-top a {
+        text-decoration: none;
+        color: #36689A;
+        background: rgba(153,178,176,0.4);
+        padding:0 10px 5px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    #back-top a:hover {
+        background: #36689A;
+        color: #D7E1E0;
+    }
+    /* footer -------------------------------------------------------------- */
+    #fuss {
+        background: #ddd;
+        
+        text-align: left;
+    }
+    #fuss > p > a {
+        float: left;
+        text-decoration: none;
+        color:#FF1414;
+        line-height: 40px;
+        font:18px Barcode;
+        padding:1% 10% 1% 5%;
+    }
+    #fuss nav#footernav ul {
+        list-style: none;
+    }
+    #fuss nav#footernav ul li {
+        display: inline-block;
+        width: 20%;
+        
+    }
+    #fuss nav#footernav ul li a {
+        text-decoration: none;
+        color:#FF1414;
+        font: 800 16px Lekton;
+        padding:1%;
+        line-height: 40px;
+    }
+
+    /* Impressum -------------------------------------------------- */
+    header.text, article.text {
+        color:#36689A;	
+        text-align: center;
+        line-height: 30px;
+    }
+    header.text h1 {
+        color:#FF1414;
+        font:500 260% OrbitronRegular;
+        margin: 60px 0 30px;
+    }
+    article.text {
+        background: #D7E1E0;
+        padding:2% 0;
+    }
+    article.text h2, h3 {
+        padding: 6% 0 2%;
+    }
+    header.text a, article.text a{
+        text-decoration: none;
+        color:#FF1414;
+    }
+    .von {
+        font-size: 14px;
+        font-style: italic;
+        margin: 6%;
+    }   
+}
+
+
+/* Mobile Vertical ------------------------------------------------------------- */
+/* Mobile Vertical ------------------------------------------------------------- */
+/* Mobile Vertical ------------------------------------------------------------- */
+/* Mobile Vertical ------------------------------------------------------------- */
+/* Mobile Vertical ------------------------------------------------------------- */
+/* Mobile Vertical ------------------------------------------------------------- */
+
+@media screen and (max-width: 750px) and (orientation: portrait),
+    screen and (device-pixel-ratio : 1.5) 
+    and (max-device-width: 400px)
+    and (orientation: portrait)
+{
+
+    body, html {
+        font:16px Lekton, sans-serif;
+        height: 100%;
+        width: 100%;
+    }
+    /* header ---------------------------------------------------------------- */
+    #hero {
+        height: 100%;
+        background-image: linear-gradient(49deg, rgba(54,104,154,.8) 45%, rgba(255,20,20,0.6) 75%), url(../home/DSC07460.JPG);
+        background-size: cover;
+        background-position: center bottom;
+        position:relative;
+    }
+    #hero > h1 {
+        position:absolute;
+        bottom:15%;
+        left:50%;
+        font:500 40px Iceland;
+        line-height: 8.5vh;
+        color:#D7E1E0;
+    }
+    #hero > h3 {
+        display: none;
+    }
+    #down {
+        position:absolute;
+        bottom:2%;
+        left:49%;
+        height: 40px;
+        width: 40px;
+        margin:auto;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 800;
+    }
+    #down #rel {
+        position:relative;
+        height: 40px;
+        width: 40px;
+    }
+    #down a {
+        position:absolute;
+        top:-5px;
+        left:8px;
+        font-size: 40px;
+        color:#D7E1E0;
+        text-decoration: none;
+        text-align: center;
+        z-index: 8;
+    }
+    #down:hover {
+        background: rgba(255,255,255,0.3);
+        border-radius:50%;
+    }
+
+    /* Hauptnav ----------------------------------------------------------------------------- */
+    #hauptnav {
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #36689A;
+        z-index: 1000;
+        transition: all 1s;
+    }
+    #navchecker:checked ~ #hauptnav  {
+        top:0;
+    }
+    #hauptnav > h2 {
+        position:fixed;
+        top:.1%;
+        right: 5px;
+        z-index:1001;
+    }
+    #hauptnav > h2 > label {
+        display: block;
+        cursor:pointer;
+    }
+    #hauptnav > h2 > label:after {
+        content:"\2630";
+        color:#D7E1E0;
+        font-size:28px;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#36689A; 
+    }
+    #navchecker:checked ~ #hauptnav h2 label:after{
+        content:"\2715";
+        color:#D7E1E0;
+        font-size:30px; /* Kreuz ................................... */
+    }
+    #navchecker:checked ~ #hauptnav h2:hover label:after {
+        color:#FF1414;
+    }
+    #hauptnav > ul, #hauptnav > ul > li > ul {
+        list-style: none;
+    }
+    #hauptnav > ul > li {
+        width: 50%;
+        height: 45vh;
+        float:left;
+        padding:10% 2% 2%;
+    }
+    #hauptnav ul li a  {
+        text-decoration: none;
+        color:#D7E1E0;
+        font: 200 16px OrbitronRegular;
+        letter-spacing: 0.3vw;
+    }
+    #hauptnav ul li a:hover {
+        color:#00DBFF;
+    }
+    #hauptnav > ul > li > a {
+        font: 500 20px Iceland;
+        border-bottom: 3px solid #FF1414;
+        display:block;
+        text-align: left;
+        margin:0 2% 0 0;
+    }
+    #hautpnav > ul > li > ul {
+        padding-top: 1%;
+    }
+    #hauptnav > ul > li > ul > li {
+        text-align: right;
+        margin-right:5%;
+    }
+    #hauptnav > ul > li > ul > li > span {
+        color:#FF1414;
+        font-size: 180%;
+        text-align: right;
+    }
+    #hauptnav > ul > li > ul > li:first-child {
+        padding-top: 10%;
+    }
+    #hauptnav .small {
+        font-size:16px;
+    }
+    /* Topnav ---------------------------------------------------------------- */
+    #logo {
+        position:fixed;
+        top:2.1vh;
+        left:1%;
+        width: 10%;
+        z-index: 901;
+    }
+    #logo a {
+        font: 150% Orbitron500;
+        color:#D7E1E0;
+        text-decoration: none;
+    }
+    #logo > a:hover {
+        color:#36689A;
+    }
+    #topnav {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+        z-index:999;
+        transition: all 1s;
+    }
+    #topnav.background {
+        background:#fff;   /*rgba(255,20,20,0.5)*/
+    }
+    
+
+    /* main ----------------------------------------------------------------- */
+    #bild {
+        /*background: url(../home/CamaraVirtual.jpg)no-repeat center fixed;
+        background-size: cover;*/
+        background-color:#FF1414;
+    }
+    /* article 1 -------------------------------------------------- */
+    article#bewerbahn {
+        text-align: center;
+        
+    }
+    article#bewerbahn > header {
+        padding:20% 2% 15%;
+    }
+    article#bewerbahn h2 {
+        font:500 200% OrbitronRegular;
+        color:#00DBFF;
+    }
+    article#bewerbahn h2 > span {
+        font:500 90% Orbitron500;
+        padding: 0 2%;
+    }
+    article#bewerbahn section{
+        height: 135%;
+        color:#36689A;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding: 23% 1% 14%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 8%, #fff 8%, #fff 92%, transparent 92%);
+    }
+    article#bewerbahn section > p {
+        padding-bottom: 25px;
+    }
+    article#bewerbahn section > p > span {
+        font:800 16px Lekton;
+        color:#00DBFF;
+    }
+    /* article 2 -------------------------------------------------- */
+    article#muster {
+        text-align: center;
+        
+    }
+    article#muster > header {
+        padding:20% 2% 15%;
+    }
+    article#muster h2 {
+        font:500 200% OrbitronRegular;
+        color:#fff;
+    }
+    article#muster > section {
+        color:#fff;
+        height: 135%;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:23% 1% 14%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 9%, #00DBFF 9%, #00DBFF 91%, transparent 91%);
+    }
+    article#muster > section > p {
+        padding-bottom: 25px;
+    }
+    article#muster > section > p > span {
+        color:#36689A;
+        font-weight: 800;
+    }
+    article#muster > section > p:first-child {
+        font:500 18px Orbitron500;
+        color:#36689A;
+        letter-spacing: 4px;
+        padding-bottom: 25px;
+    }
+     
+    article#muster > section a {
+        font:500 25px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 30px;
+        padding: 2%;
+    }
+    article#muster >section i{
+        font-size:15px;
+        color:#FF1414;
+    }
+    /* article 3 -------------------------------------------------- */
+    article#kreis {
+        text-align:center;
+    }
+    article#kreis > header {
+        padding:20% 2% 15%;
+    }
+    article#kreis h2 {
+        color:#D7E1E0;
+        font:500 200% OrbitronRegular;
+    }
+    article#kreis > section {
+        color:#36689A;
+        height: 135%;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:14% 0 13%;
+        line-height: 30px;
+        overflow: hidden;
+        background: linear-gradient(355deg, transparent 14%, #D7E1E0 14%, #D7E1E0 87%, transparent 87%);
+    }
+    article#kreis .linerechts {
+        font:500 26px Advent Pro;
+        margin-left: -10px;
+        overflow: hidden;
+        letter-spacing: .2px;
+    }
+    article#kreis .linerechts > span {
+        font:500 28px Advent Pro;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        color:#D7E1E0;
+        overflow: hidden;
+    }
+    article#kreis > section > p:first-of-type {
+        padding-top: 20px;
+    }
+    article#kreis > section > p {
+        padding: 0 1% 20px;
+    }
+    article#kreis > section a {
+        font:500 30px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 40px;
+        padding: 3%;
+    }
+    article#kreis >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 4 -------------------------------------------------- */
+    article#vorstellung {
+        text-align: center;
+    }
+    article#vorstellung > header {
+        padding:20% 2% 15%;
+    }
+    article#vorstellung > header h2 {
+        font:500 200% OrbitronRegular;
+        color:#fff;
+    }
+    article#vorstellung > section {
+        color:#36689A;
+        height: 135%;
+        font:500 16px Lekton;
+        letter-spacing: .1px;
+        padding:25% 1% 22%;
+        line-height: 30px;
+        background: linear-gradient(355deg, transparent 7%, #00DBFF 7%, #00DBFF 93%, transparent 93%);
+    }
+    article#vorstellung > section > p, h3 {
+        padding-bottom: 20px;
+    }
+    article#vorstellung > section > p:last-of-type {
+        padding-bottom: 10px;
+    }
+    article#vorstellung > section > h3 {
+        display: none
+    }
+    article#vorstellung > section > p > span {
+        color:#D7E1E0;
+        font-weight: 800;
+    }
+    article#vorstellung > section > ul {
+        list-style: none;
+        margin: auto;
+        width: 95%;
+    }
+    article#vorstellung > section a {
+        font:500 20px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height:40px;
+        padding: 1% ;
+    }
+    article#vorstellung >section i{
+        font-size:16px;
+        color:#FF1414;
+    }
+    /* Pfeil nach oben --------------------------------------- */
+    #back-top {
+        position: fixed;
+        right: 2%;
+        bottom: 6%;
+        display:none;
+        z-index: 700;
+    }
+    #back-top a {
+        text-decoration: none;
+        color: #36689A;
+        background: rgba(153,178,176,0.4);
+        padding:0 10px 5px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    #back-top a:hover {
+        background: #36689A;
+        color: #D7E1E0;
+    }
+    /* footer -------------------------------------------------------------- */
+    #fuss {
+        background: #ddd;
+        padding:4% 0 0;
+        text-align: center;
+    }
+    #fuss > p > a {
+        text-decoration: none;
+        color:#FF1414;
+        line-height: 40px;
+        font:20px Barcode;
+    }
+    #fuss nav#footernav ul {
+        list-style: none;
+    }
+    #fuss nav#footernav ul li {
+        display: inline-block;
+        width: 30%;
+    }
+    #fuss nav#footernav ul li a {
+        text-decoration: none;
+        color:#FF1414;
+        font: 800 16px Lekton;
+        padding:1%;
+        line-height: 40px;
+    }
+
+    /* Impressum -------------------------------------------------- */
+    header.text, article.text {
+        color:#36689A;	
+        text-align: center;
+        line-height: 30px;
+    }
+    header.text h1 {
+        color:#FF1414;
+        font:500 260% OrbitronRegular;
+        margin: 60px 0 30px;
+    }
+    article.text {
+        background: #D7E1E0;
+        padding:2% 0;
+    }
+    article.text h2, h3 {
+        padding: 6% 0 2%;
+    }
+    header.text a, article.text a{
+        text-decoration: none;
+        color:#FF1414;
+    }
+    .von {
+        font-size: 14px;
+        font-style: italic;
+        margin: 6%;
+    }   
+}
+
+/* -- topnav display none --------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+
+@media screen and (max-width: 831px){
+    #topnav ul {
+        display:none !important;
+    }
+}
+
+
+/* Tablet Horizontal-------- logo 2.5vh ------------------------------------------- */
+/* Tablet Horizontal------------------------------------------------------------- */
+/* Tablet Horizontal------------------------------------------------------------- */
+/* Tablet Horizontal------------------------------------------------------------- */
+/* Tablet Horizontal------------------------------------------------------------- */
+/* Tablet Horizontal------------------------------------------------------------- */
+
+@media screen and (min-width: 831px) and (max-width: 1100px) and (orientation: landscape) {
+
+    body, html {
+        font:15px Lekton, sans-serif;
+        height: 100%;
+    }
+    /* header ---------------------------------------------------------------- */
+    #hero {
+        height: 100%;
+        background-image: linear-gradient(49deg, rgba(54,104,154,.8) 45%, rgba(255,20,20,0.6) 75%), url(../home/DSC07460.JPG);
+        background-size: cover;
+        background-position: left bottom;
+        position:relative;
+    }
+    #hero > h1 {
+        position:absolute;
+        bottom:15%;
+        left:49.5%;
+        font:500 5vw Iceland;
+        line-height: 8vh;
+        color:#D7E1E0;
+    }
+    #hero > h3 {
+        display:none;
+    }
+    #down {
+        position:absolute;
+        bottom:15px;
+        left:48.5%;
+        height: 55px;
+        width: 55px;
+        margin:auto;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 800;
+    }
+    #down > #rel {
+        position:relative;
+        height: 55px;
+        width: 55px;
+    }
+    #rel > a {
+        position:absolute;
+        bottom:10px;
+        left:0;
+        height: 55px;
+        width: 55px;
+        font-size: 50px;
+        color:#D7E1E0;
+        text-decoration: none;
+        text-align: center;
+        z-index: 8;
+    }
+    #down:hover {
+        background: rgba(255,255,255,0.3);
+        border-radius:50%;
+    }
+    
+    /* Hauptnav ----------------------------------------------------------------------------- */
+    #hauptnav {
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #36689A;
+        z-index: 1000;
+        transition: all 1s;
+    }
+    #navchecker:checked ~ #hauptnav  {
+        top:0;
+    }
+    #hauptnav > h2 {
+        position:fixed;
+        top:2px;
+        right: 15px;
+        z-index:1001;
+    }
+    #hauptnav > h2 > label {
+        display: block;
+        cursor:pointer;
+    }
+    #hauptnav > h2 > label:after {
+        content:"\2630";
+        color:#D7E1E0;
+        font-size:35px;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#36689A; 
+    }
+    #navchecker:checked ~ #hauptnav h2 label:after{
+        content:"\2715";
+        color:#D7E1E0;
+        font-size:150%;
+    }
+    #navchecker:checked ~ #hauptnav h2:hover label:after {
+        color:#FF1414;
+    }
+    #hauptnav > ul, #hauptnav > ul > li > ul {
+        list-style: none;
+    }
+    #hauptnav > ul > li {
+        width: 48%;
+        height: 47vh;
+        float:left;
+        padding:1% 2% 2%;
+    }
+    #hauptnav ul li a  {
+        text-decoration: none;
+        color:#D7E1E0;
+        font: 500 16px Orbitron500;
+        letter-spacing: 0.9vw;
+    }
+    #hauptnav ul li a:hover {
+        color:#00DBFF;
+    }
+    #hauptnav > ul > li > a {
+        font: 500 3vw Iceland;
+        border-bottom: 2px solid #FF1414;
+        display:block;
+        text-align: left;
+        margin:0 11% 0 0;
+    }
+    #hautpnav > ul > li > ul {
+        padding-top:5%;
+    }
+    #hauptnav > ul > li > ul > li {
+        text-align: right;
+        margin-right:10%;
+    }
+    #hauptnav > ul > li > ul > li > span {
+        color:#FF1414;
+        font-size: 200%;
+        text-align: right;
+    }
+    #hauptnav > ul > li > ul > li:first-child {
+        padding-top: 2%;
+    }
+    /* Topnav ---------------------------------------------------------------- */
+    #logo {
+        position:fixed;
+        top:2.5vh;
+        left:1%;
+        width: 10%;
+        z-index: 901;
+    }
+    #logo a {
+        font: 200% Orbitron500;
+        color:#D7E1E0;
+        text-decoration: none;
+    }
+    #logo > a:hover {
+        color:#36689A;
+    }
+    #topnav {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+        z-index:999;
+        transition: all 1s;
+    }
+    #topnav ul {
+        list-style: none;
+        width: 84%;
+        margin-left: 14%;
+    }
+    #topnav ul li a {
+        text-decoration: none;
+        color:#D7E1E0;
+        float:left;
+        width: 24%;
+        text-align: center;
+        font: 16px Orbitron500;
+        text-transform: uppercase;
+        line-height: 60px;
+        background: rgba(255, 255, 255, .0);
+    }
+    #topnav ul li a span {
+        font-size: 100%;
+        padding:.5%;
+    }
+    #topnav ul li a:hover span {
+        color:#36689A;
+    }
+    .background {
+        background:#fff;   /*rgba(255,20,20,0.5)*/
+        transition: all 1s;
+    }
+    .clearfix:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+    
+    
+
+    /* main ----------------------------------------------------------------- */
+    #bild {
+        background: url(../home/CamaraVirtual.jpg)no-repeat center fixed;
+        background-size: cover;
+    }
+    /* article 1 -------------------------------------------------- */
+    article#bewerbahn {
+        text-align: center;
+        
+    }
+    article#bewerbahn > header {
+        padding:15% 2% 10%;
+    }
+    article#bewerbahn h2 {
+        font:500 500% OrbitronRegular;
+        color:#00DBFF;
+    }
+    article#bewerbahn h2 > span {
+        font:500 60% Orbitron500;
+        padding: 0 2%;
+    }
+    article#bewerbahn section{
+        height: 720px;
+        background: linear-gradient(356deg, transparent 15%, #fff 15%, #fff 86%, transparent 86%);
+        color:#36689A;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding: 18% 2% 10% ;
+        line-height: 35px;
+    }
+    article#bewerbahn section > p {
+        padding-bottom: 25px;
+    }
+    article#bewerbahn section > p > span {
+        font:500 16px Advent Pro;
+        color:#00DBFF;
+    }
+    /* article 2 -------------------------------------------------- */
+    article#muster {
+        text-align: center;
+    }
+    article#muster > header {
+        padding:15% 2% 10%;
+    }
+    article#muster h2 {
+        font:500 500% OrbitronRegular;
+        color:#fff;
+    }
+    article#muster > section {
+        color:#fff;
+        height: 650px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:18% 2% 8%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #00DBFF 15%, #00DBFF 86%, transparent 86%);
+    }
+    article#muster > section > p {
+        padding-bottom: 3%;
+    }
+    article#muster > section > p:first-child {
+        font:500 20px Orbitron500;
+        color:#36689A;
+        letter-spacing: 10px;
+        padding-bottom: 3%;
+    }
+    article#muster > section > p > span {
+        color:#36689A;
+    } 
+    article#muster > section a {
+        font:500 35px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 60px;
+        padding: 3%;
+    }
+    article#muster >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 3 -------------------------------------------------- */
+    article#kreis {
+        text-align:center;
+        overflow: hidden;
+    }
+    article#kreis > header {
+        padding:15% 2% 10%;
+    }
+    article#kreis h2 {
+        color:#D7E1E0;
+        font:500 500% OrbitronRegular;
+    }
+    article#kreis > section {
+        color:#36689A;
+        height: 630px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:15% 0 8%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #D7E1E0 15%, #D7E1E0 86%, transparent 86%);
+        
+    }
+    article#kreis .linerechts {
+        font:500 26px Advent Pro;
+        margin-left: -16px;
+        overflow: hidden;
+        letter-spacing: .2px;
+    }
+    article#kreis .linerechts > span {
+        font:500 28px Advent Pro;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        color:#D7E1E0;
+        overflow: hidden;
+    }
+    article#kreis > section > p:first-of-type {
+        padding-top: 5%;
+    }
+    article#kreis > section > p {
+        padding: 0 2% 25px;
+    }
+    article#kreis > section a {
+        font:500 35px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 60px;
+        padding: 3%;
+    }
+    article#kreis >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 4 -------------------------------------------------- */
+    article#vorstellung {
+        text-align: center;
+    }
+    article#vorstellung > header {
+        padding:15% 2% 5%;
+    }
+    article#vorstellung > header h2 {
+        font:500 500% OrbitronRegular;
+        color:#fff;
+    }
+    article#vorstellung > section {
+        color:#36689A;
+        height: 700px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:12% 0 10%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #00DBFF 15%, #00DBFF 87%, transparent 87%);
+         
+    }
+    article#vorstellung > section > p, h3 {
+        padding: 0 2% 20px;
+}
+    article#vorstellung > section > h3 {
+        color:#D7E1E0;
+        font:900 30px OrbitronRegular;
+        letter-spacing: 4px;
+    }
+    article#vorstellung > section > p > span {
+        color:#D7E1E0;
+    }
+    article#vorstellung > section > ul {
+        list-style: none;
+        width: 100%;
+        margin: auto;
+    }
+    article#vorstellung > section > ul > li {
+        display: inline-block;
+        width: 20%;
+    }
+    article#vorstellung > section > ul > li.klein {
+        width: 29%;
+    }
+    article#vorstellung > section a {
+        font:500 22px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 30px;
+        padding-right: 2% ;
+    }
+    article#vorstellung >section i{
+        font-size:15px;
+        color:#FF1414;
+    }
+    /* Pfeil nach oben --------------------------------------- */
+    #back-top {
+        position: fixed;
+        right: 2%;
+        bottom: 6%;
+        display:none;
+        z-index: 700;
+    }
+    #back-top a {
+        text-decoration: none;
+        color: #36689A;
+        background: rgba(153,178,176,0.4);
+        padding:0 10px 5px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    #back-top a:hover {
+        background: #36689A;
+        color: #D7E1E0;
+    }
+    /* footer -------------------------------------------------------------- */
+    #fuss {
+        background: #ddd;
+        color:#FF1414;
+        padding:1% 5%;
+        line-height: 25px;
+    }
+    #fuss > p > a {
+        float:left;
+        font:18px Barcode;
+        text-decoration: none;
+        color:#FF1414;
+        margin-right: 30px;
+    }
+    #fuss nav#footernav {
+        text-align: left;
+    }
+    #fuss nav#footernav ul {
+        list-style: none;
+    }
+    #fuss nav#footernav ul li {
+        display: inline-block;
+        width: 15%;
+        
+    }
+    #fuss nav#footernav ul li a {
+        text-decoration: none;
+        color:#FF1414;
+        font-weight: bold;
+        padding:1% 5%;
+    }
+
+    /* Impressum -------------------------------------------------- */
+    header.text, article.text {
+        color:#36689A;	
+        text-align: center;
+        line-height: 30px;
+    }
+    header.text h1 {
+        color:#FF1414;
+        font:500 400% OrbitronRegular;
+        margin: 60px 0;
+        letter-spacing: 5px;
+        line-height: 30px;
+    }
+    header.text #topnav {
+        min-height: 50px;
+    }
+    article.text {
+        background: #D7E1E0;
+        padding:0 5% 5%;
+    }
+    article.text h2, h3 {
+        padding:6% 0 2%;
+    }
+    header.text a, article.text a{
+        text-decoration: none;
+        color:#FF1414;
+    }
+    .von {
+        font-size: 14px;
+        font-style: italic;
+        margin:5% 0 0;
+    }   
+}
+
+
+/* Tablet Vertical------------------------------------------------------------- */
+/* Tablet Vertical------------------------------------------------------------- */
+/* Tablet Vertical------------------------------------------------------------- */
+/* Tablet Vertical------------------------------------------------------------- */
+/* Tablet Vertical------------------------------------------------------------- */
+/* Tablet Vertical------------------------------------------------------------- */
+
+@media screen and (min-width: 751px) and (max-width: 1100px) and (orientation: portrait) {
+
+    body, html {
+        font:15px Lekton, sans-serif;
+        height: 100%;
+    }
+    /* header ---------------------------------------------------------------- */
+    #hero {
+        height: 100%;
+        background-image: linear-gradient(49deg, rgba(54,104,154,.8) 45%, rgba(255,20,20,0.6) 75%), url(../home/DSC07460.JPG);
+        background-size: cover;
+        background-position: left bottom;
+        position:relative;
+    }
+    #hero > h1 {
+        position:absolute;
+        bottom:15%;
+        left:49%;
+        font:500 8vw Iceland;
+        line-height: 9vh;
+        color:#D7E1E0;
+    }
+    #hero > h3 {
+        display:none;
+    }
+    #down {
+        position:absolute;
+        bottom:15px;
+        left:48.5%;
+        height: 45px;
+        width: 45px;
+        margin:auto;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 800;
+    }
+    #down > #rel {
+        position:relative;
+        height: 45px;
+        width: 45px;
+    }
+    #rel > a {
+        position:absolute;
+        bottom:10px;
+        left:0;
+        height: 45px;
+        width: 45px;
+        font-size: 50px;
+        color:#D7E1E0;
+        text-decoration: none;
+        text-align: center;
+        z-index: 8;
+    }
+    #down:hover {
+        background: rgba(255,255,255,0.3);
+        border-radius:50%;
+    }
+    
+    /* Hauptnav ----------------------------------------------------------------------------- */
+    #hauptnav {
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #36689A;
+        z-index: 1000;
+        transition: all 1s;
+    }
+    #navchecker:checked ~ #hauptnav  {
+        top:0;
+    }
+    #hauptnav > h2 {
+        position:fixed;
+        top:2px;
+        right: 15px;
+        z-index:1001;
+    }
+    #hauptnav > h2 > label {
+        display: block;
+        cursor:pointer;
+    }
+    #hauptnav > h2 > label:after {
+        content:"\2630";
+        color:#D7E1E0;
+        font-size:40px;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#36689A; 
+    }
+    #navchecker:checked ~ #hauptnav h2 label:after{
+        content:"\2715";
+        color:#D7E1E0;
+        font-size:150%;
+    }
+    #navchecker:checked ~ #hauptnav h2:hover label:after {
+        color:#FF1414;
+    }
+    #hauptnav > ul, #hauptnav > ul > li > ul {
+        list-style: none;
+    }
+    #hauptnav > ul > li {
+        width: 50%;
+        height: 35vh;
+        float:left;
+        padding:10% 2% 2%;
+    }
+    #hauptnav ul li a  {
+        text-decoration: none;
+        color:#D7E1E0;
+        font: 500 18px Orbitron500;
+        letter-spacing: 0.9vw;
+    }
+    #hauptnav ul li a:hover {
+        color:#00DBFF;
+    }
+    #hauptnav > ul > li > a {
+        font: 500 4vw Iceland;
+        border-bottom: 2px solid #FF1414;
+        display:block;
+        text-align: left;
+        margin:0 11% 0 0;
+    }
+    #hautpnav > ul > li > ul {
+        padding-top:5%;
+    }
+    #hauptnav > ul > li > ul > li {
+        text-align: right;
+        margin-right:10%;
+    }
+    #hauptnav > ul > li > ul > li > span {
+        color:#FF1414;
+        font-size: 250%;
+        text-align: right;
+    }
+    #hauptnav > ul > li > ul > li:first-child {
+        padding-top: 5%;
+    }
+    /* Topnav ---------------------------------------------------------------- */
+    #logo {
+        position:fixed;
+        top:1.5vh;
+        left:1%;
+        width: 10%;
+        z-index: 901;
+    }
+    #logo a {
+        font: 200% Orbitron500;
+        color:#D7E1E0;
+        text-decoration: none;
+    }
+    #logo > a:hover {
+        color:#36689A;
+    }
+    #topnav {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        height: 50px;
+        z-index:999;
+        transition: all 1s;
+    }
+    #topnav ul {
+        list-style: none;
+        width: 84%;
+        margin-left: 14%;
+    }
+    #topnav ul li a {
+        text-decoration: none;
+        color:#D7E1E0;
+        float:left;
+        width: 24%;
+        text-align: center;
+        font: 16px Orbitron500;
+        text-transform: uppercase;
+        line-height: 60px;
+        background: rgba(255, 255, 255, .0);
+    }
+    #topnav ul li a span {
+        font-size: 100%;
+        padding:.5%;
+    }
+    #topnav ul li a:hover span {
+        color:#36689A;
+    }
+    .background {
+        background:#fff;   /*rgba(255,20,20,0.5)*/
+        transition: all 1s;
+    }
+    .clearfix:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+    
+    
+
+    /* main ----------------------------------------------------------------- */
+    #bild {
+        background: url(../home/CamaraVirtual.jpg)no-repeat center fixed;
+        background-size: cover;
+    }
+    /* article 1 -------------------------------------------------- */
+    article#bewerbahn {
+        height: 100vh;
+        text-align: center;
+        
+    }
+    article#bewerbahn > header {
+        padding:15% 2% 10%;
+    }
+    article#bewerbahn h2 {
+        font:500 500% OrbitronRegular;
+        color:#00DBFF;
+    }
+    article#bewerbahn h2 > span {
+        font:500 60% Orbitron500;
+        padding: 0 2%;
+    }
+    article#bewerbahn section{
+        height: 720px;
+        background: linear-gradient(356deg, transparent 15%, #fff 15%, #fff 86%, transparent 86%);
+        color:#36689A;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding: 18% 2% 10% ;
+        line-height: 35px;
+    }
+    article#bewerbahn section > p {
+        padding-bottom: 25px;
+    }
+    article#bewerbahn section > p > span {
+        font:500 16px Advent Pro;
+        color:#00DBFF;
+    }
+    /* article 2 -------------------------------------------------- */
+    article#muster {
+        height: 100vh;
+        text-align: center;
+    }
+    article#muster > header {
+        padding:15% 2% 10%;
+    }
+    article#muster h2 {
+        font:500 500% OrbitronRegular;
+        color:#fff;
+    }
+    article#muster > section {
+        color:#fff;
+        height: 650px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:18% 2% 8%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #00DBFF 15%, #00DBFF 86%, transparent 86%);
+    }
+    article#muster > section > p {
+        padding-bottom: 3%;
+    }
+    article#muster > section > p:first-child {
+        font:500 20px Orbitron500;
+        color:#36689A;
+        letter-spacing: 10px;
+        padding-bottom: 3%;
+    }
+    article#muster > section > p > span {
+        color:#36689A;
+    } 
+    article#muster > section a {
+        font:500 35px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 60px;
+        padding: 3%;
+    }
+    article#muster >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 3 -------------------------------------------------- */
+    article#kreis {
+        height: 100vh;
+        text-align:center;
+        overflow: hidden;
+    }
+    article#kreis > header {
+        padding:15% 2% 10%;
+    }
+    article#kreis h2 {
+        color:#D7E1E0;
+        font:500 500% OrbitronRegular;
+    }
+    article#kreis > section {
+        color:#36689A;
+        height: 630px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:15% 0 8%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #D7E1E0 15%, #D7E1E0 86%, transparent 86%);
+        
+    }
+    article#kreis .linerechts {
+        font:500 26px Advent Pro;
+        margin-left: -16px;
+        overflow: hidden;
+        letter-spacing: .2px;
+    }
+    article#kreis .linerechts > span {
+        font:500 28px Advent Pro;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        color:#D7E1E0;
+        overflow: hidden;
+    }
+    article#kreis > section > p:first-of-type {
+        padding-top: 5%;
+    }
+    article#kreis > section > p {
+        padding: 0 2% 25px;
+    }
+    article#kreis > section a {
+        font:500 35px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 60px;
+        padding: 3%;
+    }
+    article#kreis >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 4 -------------------------------------------------- */
+    article#vorstellung {
+        text-align: center;
+        height: 100vh;
+    }
+    article#vorstellung > header {
+        padding:15% 2% 5%;
+    }
+    article#vorstellung > header h2 {
+        font:500 500% OrbitronRegular;
+        color:#fff;
+    }
+    article#vorstellung > section {
+        color:#36689A;
+        height: 740px;
+        font:500 16px Advent Pro;
+        letter-spacing: .3px;
+        padding:12% 0 10%;
+        line-height: 35px;
+        background: linear-gradient(356deg, transparent 15%, #00DBFF 15%, #00DBFF 87%, transparent 87%);
+         
+    }
+    article#vorstellung > section > p, h3 {
+        padding: 0 2% 20px;
+}
+    article#vorstellung > section > h3 {
+        color:#D7E1E0;
+        font:900 30px OrbitronRegular;
+        letter-spacing: 4px;
+    }
+    article#vorstellung > section > p > span {
+        color:#D7E1E0;
+    }
+    article#vorstellung > section > ul {
+        list-style: none;
+        width: 100%;
+        margin: auto;
+    }
+    article#vorstellung > section > ul > li {
+        display: inline-block;
+        width: 20%;
+    }
+    article#vorstellung > section > ul > li.klein {
+        width: 29%;
+    }
+    article#vorstellung > section a {
+        font:500 22px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 30px;
+        padding-right: 2% ;
+    }
+    article#vorstellung >section i{
+        font-size:15px;
+        color:#FF1414;
+    }
+    /* Pfeil nach oben --------------------------------------- */
+    #back-top {
+        position: fixed;
+        right: 2%;
+        bottom: 6%;
+        display:none;
+        z-index: 700;
+    }
+    #back-top a {
+        text-decoration: none;
+        color: #36689A;
+        background: rgba(153,178,176,0.4);
+        padding:0 10px 5px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    #back-top a:hover {
+        background: #36689A;
+        color: #D7E1E0;
+    }
+    /* footer -------------------------------------------------------------- */
+    #fuss {
+        background: #ddd;
+        color:#FF1414;
+        padding:1% 5%;
+        line-height: 25px;
+    }
+    #fuss > p > a {
+        float:left;
+        font:18px Barcode;
+        text-decoration: none;
+        color:#FF1414;
+        margin-right: 30px;
+    }
+    #fuss nav#footernav {
+        text-align: left;
+    }
+    #fuss nav#footernav ul {
+        list-style: none;
+    }
+    #fuss nav#footernav ul li {
+        display: inline-block;
+        width: 15%;
+        
+    }
+    #fuss nav#footernav ul li a {
+        text-decoration: none;
+        color:#FF1414;
+        font-weight: bold;
+        padding:1% 5%;
+    }
+
+    /* Impressum -------------------------------------------------- */
+    header.text, article.text {
+        color:#36689A;	
+        text-align: center;
+        line-height: 30px;
+    }
+    header.text h1 {
+        color:#FF1414;
+        font:500 400% OrbitronRegular;
+        margin: 60px 0;
+        letter-spacing: 5px;
+        line-height: 30px;
+    }
+    header.text #topnav {
+        min-height: 50px;
+    }
+    article.text {
+        background: #D7E1E0;
+        padding:0 5% 5%;
+    }
+    article.text h2, h3 {
+        padding:6% 0 2%;
+    }
+    header.text a, article.text a{
+        text-decoration: none;
+        color:#FF1414;
+    }
+    .von {
+        font-size: 14px;
+        font-style: italic;
+        margin:5% 0 0;
+    }   
+}
+
+
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+
+@media screen and (min-width:1101px) and (max-width: 1450px) and (orientation:landscape){
+   
+    #hero > h1 {
+        line-height: 9vh !important;
+        font: 500 400% Iceland !important;
+        left:51% !important;
+        bottom:15% !important;
+    }
+    #hero > h3 {
+        display:none;
+    }
+    #down {
+        bottom:15px !important;
+        left:49.5%;
+        height: 45px !important;
+        width: 45px !important;
+    }
+    #down > #rel {
+        height: 45px !important;
+        width: 45px !important;
+    }
+    #rel > a {
+        bottom:10px !important;
+        height: 45px !important;
+        width: 45px !important;
+        font-size: 50px !important;
+    }
+    article#bewerbahn h2, article#muster h2, article#kreis h2, article#vorstellung h2 {
+        font: 500 700% OrbitronRegular !important;
+    }
+    article#bewerbahn h2 span {
+        font: 500 80% Orbitron500 !important;
+    }
+    
+    article#bewerbahn section {
+        padding-top: 13.5% !important;
+    }
+    article#muster section {
+        padding-top: 14% !important;
+    }
+    article#kreis section {
+        padding-top: 8% !important;
+    }
+    article#vorstellung section {
+        padding-top: 8% !important;
+    }
+    article#bewerbahn  {
+        height: 110% !important;
+    }
+    article#muster  {
+        height: 110% !important;
+    }
+    article#kreis  {
+        height: 110% !important;
+    }
+    article#vorstellung  {
+        height: 110% !important;
+    }
+    #topnav ul {
+        width: 85% !important;
+        margin-left: 10% !important;
+    }
+    #topnav ul li a {
+        width: 25% !important;
+    }
+}
+
+
+
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+
+@media screen and (min-width:1451px) and (max-width: 1650px) and (orientation:landscape){
+    #hero {
+        height: 100% !important;
+    }
+    #hero > h1 {
+        line-height: 8vh;
+        font: 500 600% Iceland !important;
+    }
+    article#bewerbahn section {
+    }
+    article#bewerbahn h2, article#muster h2, article#kreis h2, article#vorstellung h2 {
+        font: 500 800% OrbitronRegular !important;
+    }
+    article#bewerbahn h2 span {
+        font: 500 80% Orbitron500 !important;
+    }
+    article#bewerbahn  {
+        height: 105% !important;
+    }
+    article#muster  {
+        height: 105% !important;
+    }
+    article#kreis  {
+        height: 105% !important;
+    }
+    article#vorstellung  {
+        height: 115% !important;
+    }
+    #topnav ul {
+        width: 85% !important;
+        margin-left: 10% !important;
+    }
+    #topnav ul li a {
+        width: 25% !important;
+    }
+}
+
+
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+
+@media screen and (min-width:1651px) and (max-width: 1951px) and (orientation:landscape) {
+    article#vorstellung  {
+        height: 115% !important;
+    }
+}
+
+
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+@media screen and (min-width:1101px) and (max-width: 1450px) and (orientation:portrait){
+   
+    article#bewerbahn h2, article#muster h2, article#kreis h2, article#vorstellung h2 {
+        font: 500 700% OrbitronRegular !important;
+    }
+    article#bewerbahn h2 span {
+        font: 500 80% Orbitron500 !important;
+    }
+    
+     article#bewerbahn section {
+        padding-top: 13.5% !important;
+        
+    }
+    article#muster section {
+        padding-top: 14% !important;
+    }
+    article#kreis section {
+        padding-top: 8% !important;
+    }
+    article#vorstellung section {
+        padding-top: 8% !important;
+    }
+    
+    #topnav ul {
+        width: 85% !important;
+        margin-left: 10% !important;
+    }
+    #topnav ul li a {
+        width: 25% !important;
+    }
+}
+
+
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+/*  ---------------------------------------------------------------- */
+@media screen and (min-width:1451px) and (max-width: 1651px) and (orientation:portrait){
+    
+    article#bewerbahn section {
+        
+    }
+    article#bewerbahn h2, article#muster h2, article#kreis h2, article#vorstellung h2 {
+        font: 500 800% OrbitronRegular !important;
+    }
+    article#bewerbahn h2 span {
+        font: 500 80% Orbitron500 !important;
+    }
+    #topnav ul {
+        width: 85% !important;
+        margin-left: 10% !important;
+    }
+    #topnav ul li a {
+        width: 25% !important;
+    }
+}
+
+@media screen and (min-width:1652px){
+    
+}
+
+/* Desktop --------------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------------- */
+/* Desktop --------------------------------------------------------------------- */
+
+@media screen and (min-width:1101px){
+
+    body, html {
+        font:15px Lekton, sans-serif;
+        height: 100%;
+    }
+    main article section >* {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    /* header ---------------------------------------------------------------- */
+    #hero {
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(49deg, rgba(54,104,154,.8) 45%, rgba(255,20,20,0.6) 75%), url(../home/DSC07460.JPG);
+        background-size: cover;
+        background-position: center bottom;
+        position:relative;
+        top:0;
+        left:0;
+    }
+    #hero > h1 {
+        position:absolute;
+        bottom:10%;
+        left:50%;
+        font:500 700% Iceland;
+        line-height: 9vh;
+        color:#D7E1E0;
+    }
+    #hero > h3 {
+        position:absolute;
+        bottom: 7%;
+        right: 5%;
+        color:#D7E1E0;
+        text-align: right;
+        font:500 18px Advent Pro;
+        letter-spacing: 2px;
+    }
+    #down {
+        position:absolute;
+        bottom:25px;
+        left:50.5%;
+        height: 55px;
+        width: 55px;
+        margin:auto;
+        cursor: pointer;
+        transition: all 0.5s;
+        z-index: 800;
+    }
+    #down > #rel {
+        position:relative;
+        height: 55px;
+        width: 55px;
+    }
+    #rel > a {
+        position:absolute;
+        bottom:15px;
+        left:0;
+        height: 55px;
+        width: 55px;
+        font-size: 70px;
+        color:#D7E1E0;
+        text-decoration: none;
+        text-align: center;
+        z-index: 8;
+    }
+    #down:hover {
+        background: rgba(255,255,255,0.3);
+        border-radius:50%;
+    }
+
+    /* Hauptnav ----------------------------------------------------------------------------- */
+    #hauptnav {
+        position:fixed;
+        top:-100%;
+        left:0;
+        width: 100%;
+        height:100%;
+        background: #36689A;
+        z-index: 1000;
+        transition: all 1s;
+    }
+    #navchecker:checked ~ #hauptnav  {
+        top:0;
+    }
+    #hauptnav > h2 {
+        position:fixed;
+        top:.7%;
+        right: 15px;
+        z-index:1001;
+    }
+    #hauptnav > h2 > label {
+        display: block;
+        cursor:pointer;
+    }
+    /* icono pagina principal ------------- */
+    #hauptnav > h2 > label:after {
+        content:"\2630";
+        color:#D7E1E0;
+        font-size:150%;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#36689A; 
+    }
+    /* icono pagina menu ----------------------------- */
+    #navchecker:checked ~ #hauptnav h2 label:after{
+        content:"\2715";
+        color:#D7E1E0;
+        font-size:150%;
+    }
+    #navchecker:checked ~ #hauptnav h2:hover label:after {
+        color:#FF1414;
+    }
+    #hauptnav > ul, #hauptnav > ul > li > ul {
+        list-style: none;
+    }
+    #hauptnav > ul > li {
+        width: 50%;
+        height: 50vh;
+        float:left;
+        padding:2%;
+    }
+    #hauptnav ul li a  {
+        text-decoration: none;
+        color:#D7E1E0;
+        font: 500 18px Orbitron500;
+        letter-spacing: 0.9vw;
+    }
+    #hauptnav ul li a:hover {
+        color:#00DBFF;
+    }
+    #hauptnav > ul > li > a {
+        font: 500 100% Iceland;
+        font-size: 4vw;
+        border-bottom: 2px solid #FF1414;
+        display:block;
+        text-align: left;
+        margin:0 11% 0 0;
+    }
+    #hautpnav > ul > li > ul {
+        padding-top:5%;
+    }
+    #hauptnav > ul > li > ul > li {
+        text-align: right;
+        margin-right:10%;
+    }
+    #hauptnav > ul > li > ul > li > span {
+        color:#FF1414;
+        font-size: 250%;
+        text-align: right;
+    }
+    #hauptnav > ul > li > ul > li:first-child {
+        padding-top: 5%;
+    }
+    /* Topnav ---------------------------------------------------------------- */
+    #logo {
+        position:fixed;
+        top:1.3vh;
+        left:1%;
+        width: 10%;
+        z-index: 901;
+    }
+    #logo a {
+        font: 200% Orbitron500;
+        color:#D7E1E0;
+        text-decoration: none;
+    }
+    #logo > a:hover {
+        color:#36689A;
+    }
+    #topnav {
+        position:fixed;
+        top:0;
+        left:0;
+        width: 100%;
+        z-index:999;
+    }
+    #topnav ul {
+        list-style: none;
+        width: 78%;
+        margin-left: 20%;
+    }
+    #topnav ul li a {
+        text-decoration: none;
+        color:#D7E1E0;
+        float:left;
+        width: 20%;
+        text-align: center;
+        font:500 120% Orbitron500;
+        text-transform: uppercase;
+        line-height: 60px;
+        background: rgba(255, 255, 255, .0);
+    }
+    #topnav ul li a span {
+        font-size: 200%;
+        padding:3%;
+    }
+    #topnav ul li a:hover span {
+        color:#36689A;
+    }
+    .background {
+        background:#fff;   /*rgba(255,20,20,0.5)*/
+        transition: all 1s;
+    }
+    .clearfix:after {
+        content:"";
+        display:block;
+        clear:both;
+    }
+
+    /* main ----------------------------------------------------------------- */
+    #bild {
+        background: url(../home/CamaraVirtual.jpg)no-repeat center fixed;
+        background-size: cover;
+    }
+    /* article 1 -------------------------------------------------- */
+    article#bewerbahn {
+        height: 100vh;
+        text-align: center;
+    }
+    article#bewerbahn > header {
+        padding:15% 5% 10%;
+    }
+    article#bewerbahn h2 {
+        font:500 900% OrbitronRegular;
+        color:#00DBFF;
+    }
+    article#bewerbahn h2 > span {
+        font:500 100% Orbitron500;
+        padding:0 2%;
+    }
+    article#bewerbahn section{
+        height: 700px;
+        color:#36689A;
+        font:500 18px Advent Pro;
+        letter-spacing: 1px;
+        padding:10% 4%;
+        line-height: 35px;
+        background: linear-gradient(358deg, transparent 13%, #fff 13%, #fff 86%, transparent 86%);
+        
+    }
+    article#bewerbahn section > p {
+        padding-bottom: 2%;
+    }
+    article#bewerbahn section > p > span {
+        font:500 19px Advent Pro;
+        color:#00DBFF;
+    }
+    /* article 2 -------------------------------------------------- */
+    article#muster {
+        height: 100vh;
+        text-align: center;
+    }
+    article#muster > header {
+        padding:15% 5% 10%;
+    }
+    article#muster h2 {
+        font:500 900% OrbitronRegular;
+        color:#fff;
+    }
+    article#muster > section {
+        color:#fff;
+        height: 700px;
+        font:500 18px Advent Pro;
+        letter-spacing: 1px;
+        padding: 10% 4%;
+        line-height: 35px;
+        background: linear-gradient(358deg, transparent 13%, #00DBFF 13%, #00DBFF 85%, transparent 85%);
+    }
+    article#muster > section > p {
+        padding-bottom: 2%;
+    }
+    article#muster > section > p:first-child {
+        font:500 20px Orbitron500;
+        color:#36689A;
+        letter-spacing: 15px;
+        padding-bottom: 35px;
+    }
+    article#muster > section > p > span {
+        color:#36689A;
+    } 
+    article#muster > section a {
+        font:500 40px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 70px;
+        padding: 3%;
+    }
+    article#muster >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* article 3 -------------------------------------------------- */
+    article#kreis {
+        height: 100vh;
+        text-align:center;
+    }
+    article#kreis > header {
+        padding:15% 5% 10%;
+    }
+    article#kreis h2 {
+        color:#D7E1E0;
+        font:500 900% OrbitronRegular;
+    }
+    article#kreis > section {
+        color:#36689A;
+        height: 700px;
+        font:500 18px Advent Pro;
+        letter-spacing: 1.5px;
+        padding: 6% 0 3.5%;
+        line-height: 35px;
+        background: linear-gradient(358deg, transparent 15%, #D7E1E0 15%, #D7E1E0 85%, transparent 85%);
+    }
+    article#kreis .linerechts {
+        font:500 26px Advent Pro;
+        width: 100%;
+        margin-left: 0px;
+        overflow: hidden;
+    }
+    article#kreis .linerechts > span {
+        font:500 28px Advent Pro;
+        opacity: 0.9;
+        text-shadow: -1px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        color:#D7E1E0;
+        overflow: hidden;
+    }
+    article#kreis > section > p:first-of-type {
+        padding-top: 30px;
+    }
+    article#kreis > section > p {
+        padding-bottom: 25px;
+    }
+    article#kreis > section a {
+        font:500 40px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 90px;
+        padding: 3%;
+    }
+    article#kreis >section i{
+        font-size:30px;
+        color:#FF1414;
+    }
+    /* article 4 -------------------------------------------------- */
+    article#vorstellung {
+        text-align: center;
+        height: 100vh;
+    }
+    article#vorstellung > header {
+        padding:15% 5% 10%;
+    }
+    article#vorstellung > header h2 {
+        font:500 900% OrbitronRegular;
+        color:#fff;
+    }
+    article#vorstellung > section {
+        color:#36689A;
+        height: 750px;
+        font:500 18px Advent Pro;
+        letter-spacing: 1px;
+        padding:4%;
+        line-height: 35px;
+        background: #00DBFF;
+        background: linear-gradient(357deg, transparent 15%, #00DBFF 15%, #00DBFF 86%, transparent 86%);
+    }
+    article#vorstellung > section > p, h3 {
+        padding-bottom: 20px;
+    }
+    article#vorstellung > section > h3 {
+        color:#D7E1E0;
+        font:900 30px OrbitronRegular;
+        letter-spacing: 4px;
+    }
+    article#vorstellung > section > p > span {
+        color:#D7E1E0;
+    }
+    article#vorstellung > section > ul {
+        list-style: none;
+        width: 100%;
+        margin: auto;
+    }
+    article#vorstellung > section > ul > li {
+        display: inline-block;
+        width: 24%;
+        padding:1%;
+    }
+    article#vorstellung > section a {
+        font:500 25px Iceland;
+        color:#FF1414;
+        text-decoration:none;
+        line-height: 30px;
+        padding: 1%;
+    }
+    article#vorstellung >section i{
+        font-size:20px;
+        color:#FF1414;
+    }
+    /* Pfeil nach oben --------------------------------------- */
+    #back-top {
+        position: fixed;
+        right: 2%;
+        bottom: 6%;
+        display:none;
+        z-index: 700;
+    }
+    #back-top a {
+        text-decoration: none;
+        color: #36689A;
+        background: rgba(153,178,176,0.4);
+        padding:0 10px 5px;
+        font-size: 1.5rem;
+        display: block;
+    }
+    #back-top a:hover {
+        background: #36689A;
+        color: #D7E1E0;
+    }
+    /* footer -------------------------------------------------------------- */
+    #fuss {
+        background: #ddd;
+        color:#FF1414;
+        padding:1% 5%;
+        line-height: 25px;
+    }
+    #fuss > p > a {
+        float:left;
+        font:150% Barcode;
+        text-decoration: none;
+        color:#FF1414;
+        margin-right: 100px;
+    }
+    #fuss nav#footernav {
+        text-align: left;
+    }
+    #fuss nav#footernav ul {
+        list-style: none;
+    }
+    #fuss nav#footernav ul li {
+        display: inline-block;
+        width: 15%;
+    }
+    #fuss nav#footernav ul li a {
+        text-decoration: none;
+        color:#FF1414;
+        font-weight: bold;
+        padding:1% 5%;
+    }
+
+    /* Impressum -------------------------------------------------- */
+    header.text, article.text {
+        color:#36689A;	
+        text-align: center;
+        line-height: 30px;
+    }
+    header.text h1 {
+        color:#FF1414;
+        font:500 600% OrbitronRegular;
+        margin: 70px 0;
+    }
+    header.text #topnav {
+        min-height: 50px;
+    }
+    article.text {
+        margin:0 8% 0 12%;
+        background: #D7E1E0;
+        padding:0 5% 5%;
+    }
+    article.text h2, h3 {
+        padding:5% 0 2%;
+    }
+    header.text a, article.text a{
+        text-decoration: none;
+        color:#FF1414;
+    }
+    .von {
+        font-size: 14px;
+        font-style: italic;
+        margin-top: 5%;
+    }   
+}

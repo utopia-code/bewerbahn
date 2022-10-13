@@ -1,0 +1,1272 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Mobile Horizontal white ---------------------------------------------- */
+/* Mobile Horizontal white ----------------------------------------------- */
+/* Mobile Horizontal white ----------------------------------------------- */
+
+@media screen and (min-width:530px) and (max-width:700px) and                 (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 2)
+    and (max-device-width: 683px) /* 683 */
+    and (orientation: landscape)
+    
+{
+    .content {
+        top:20px !important;
+    }
+    .logo-wrap {
+        position: absolute;
+        left:20% !important;
+        top: 0% !important;
+    }
+    #seilBahn {
+        max-width: 75vh !important;
+    }
+    /*
+    #kreisbahn h1 {
+        color: white !important;
+    }
+    */
+}
+
+
+/* Ipad ---------------------------------------------- */
+/* Ipad ----------------------------------------------- */
+/* Ipad ----------------------------------------------- */
+/* Ipad ------------------------------------------------ */
+/* Ipad ----------------------------------------------- */
+/* Ipad ------------------------------------------------- */
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+{
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+  /* header ---------------------------------------------------------- */
+    .content {
+        top:10%;
+    }
+    .logo-wrap {
+        position: absolute;
+        left:22%;
+        top: 0%;
+    }
+    #seilBahn {
+        max-width: 75vh;
+    }
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+
+    }
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        padding:0 1%;
+        color:rgba(54,104,154,1);
+        font:500 12vw Iceland;
+        text-align: center;
+        width: 100%;
+        /*color: brown;*/
+    }
+    #down {
+        display: none;
+    }
+
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 40px OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        padding:5% 0;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 17%, transparent 17%, transparent 83%, rgba(0,219,255,0.6) 83%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 90vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:80px;
+        width: 80px;
+        opacity: 0.8;
+        padding: 3px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 11%, transparent 11%, transparent 85%, rgba(0,219,255,0.6) 85%);
+        padding:5% 0 0;
+        
+    }
+    
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+        padding: 5% 0;
+    }
+    
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        padding: 5% 0;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }     
+}
+
+
+/* Mobile Horizontal Brown ---------------------------------------------- */
+/* Mobile Horizontal Brown ----------------------------------------------- */
+/* Mobile Horizontal Brown ----------------------------------------------- */
+/* Mobile Horizontal Brown ------------------------------------------------ */
+/* Mobile Horizontal Brown ----------------------------------------------- */
+/* Mobile Horizontal Brown ------------------------------------------------- */
+
+@media screen and (max-width:900px) and (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 3)
+    and (max-device-width: 812px)
+    and (orientation: landscape)
+{
+    
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+  /* header ---------------------------------------------------------- */
+    .content {
+        top:10%;
+    }
+    .logo-wrap {
+        position: absolute;
+        left:22%;
+        top: 0%;
+    }
+    #seilBahn {
+        max-width: 75vh;
+    }
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+
+    }
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:0;
+        left: 0;
+        padding:0 1%;
+        color:rgba(54,104,154,1);
+        font:500 12vw Iceland;
+        text-align: center;
+        width: 100%;
+        /*color: brown;*/
+    }
+    #down {
+        display: none;
+    }
+
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 40px OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        padding:5% 0;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 17%, transparent 17%, transparent 83%, rgba(0,219,255,0.6) 83%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 90vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:80px;
+        width: 80px;
+        opacity: 0.8;
+        padding: 3px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 11%, transparent 11%, transparent 85%, rgba(0,219,255,0.6) 85%);
+        padding:5% 0 0;
+        
+    }
+    
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+        padding: 5% 0;
+    }
+    
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        padding: 5% 0;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }     
+}
+
+
+/* Mobile blueviolet ------------------------------------------------------ */
+/* Mobile blueviolet ------------------------------------------------------ */
+/* Mobile blueviolet ----------------------------------------------------- */
+/* Mobile blueviolet ----------------------------------------------------- */
+/* Mobile blueviolet ------------------------------------------------------ */
+/* Mobile blueviolet ------------------------------------------------------ */
+@media screen and (max-width:650px) and (orientation: portrait) {
+    
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+  /* header ---------------------------------------------------------- */
+    .content {
+        top:80px;
+        width:calc(100% - 5%);
+    }
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+
+    }
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:10%;
+        left: 0;
+        padding:0 1%;
+        color:rgba(54,104,154,1);
+        font:500 20.5vw Iceland;
+        text-align: center;
+        width: 100%;
+        /* color: blueviolet;*/
+    }
+
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 40px OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        padding-top: 25%;
+        padding-bottom: 30%;
+        background: linear-gradient(352deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 89%, rgba(0,219,255,0.6) 89%);
+        }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 90vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:100px;
+        width: 100px;
+        opacity: 0.8;
+        padding: 3px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        background: linear-gradient(352deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 86%, rgba(0,219,255,0.6) 85%);
+        padding-top: 19%;	
+        padding-bottom: 28%;
+        }
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        background: linear-gradient(352deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+        padding-bottom: 25%;
+        padding-top:25%;
+    }
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        padding-top: 25%;
+        padding-bottom: 39%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 85%, rgba(0,219,255,0.6) 85%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }     
+}
+
+
+/* Tablet Horizontal extra-large ------------------------------------------ */
+/* Tablet Horizontal extra-large ------------------------------------------ */
+/* Tablet Horizontal extra-large ------------------------------------------
+*/
+@media screen and (min-width: 1801px) and (orientation: landscape){
+    #seilBahn {
+        max-width: 70vh !important;
+    }
+    #kreisbahn h1 {
+        font-size: 350px !important;
+    }
+}
+
+
+/* Desktop Horizontal red -------------------------------------------------------- */
+/* Desktop Horizontal red -------------------------------------------------------- */
+/* Desktop Horizontal red -------------------------------------------------------- */
+/* Desktop Horizontal red -------------------------------------------------------- */
+/* Desktop Horizontal red ------------------------------------------------------- */
+/* Desktop Horizontal red ------------------------------------------------------ */
+
+@media screen and (min-width: 1401px) and (orientation: landscape){
+    
+    main article >* {
+        max-width: 1800px;
+        margin: 0 auto;
+    }
+    .content {
+        position: relative;
+    }
+    .logo-wrap {
+        position: absolute;
+        left: 10%;
+        top: 5%;
+    }
+    #seilBahn {
+        max-width: 70vh;
+    }
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* header ---------------------------------------------------------- */
+    #kreisbahn {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+    }
+
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:5%;
+        left: 0;
+        padding:0 1%;
+        color:rgba(54,104,154,1);
+        font:500 20.5vw Iceland;
+        text-align: center;
+        width: 100%;
+        /*color: red;*/
+
+    }
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 6vw OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        height:100vh;
+        padding-top: 10%;
+        background: linear-gradient(357deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        margin:auto;
+        max-width: 80vw;
+    }
+    #sternbild > figure img {
+        height:165px;
+        width: 165px;
+        opacity: 0.8;
+        padding: 5px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        height:100vh;
+        background: linear-gradient(357deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+        padding-top: 10%;	
+    }
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        height:125vh;
+        background: linear-gradient(357deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternwind #rahmen {
+        max-width: 800px;
+        margin: auto;
+    }
+    #sternwind h2 {
+        padding-top:10%;
+    }
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        height:100vh;
+        padding-top: 10%;
+        background: linear-gradient(357deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }
+}
+
+
+/* Tablet Horizontal orange ----------------------------------------------------- */
+/* Tablet Horizontal orange ---------------------------------------------------- */
+/* Tablet Horizontal orange ----------------------------------------------------- */
+/* Tablet Horizontal orange ------------------------------------------------------ */
+/* Tablet Horizontal orange ----------------------------------------------------- */
+/* Tablet Horizontal orange ----------------------------------------------------- */
+
+@media screen and (min-width: 901px) and (max-width: 1400px) and (orientation: landscape) {
+
+    .content {
+        position: relative;
+    }
+    .logo-wrap {
+        position: absolute;
+        left: 15%;
+        top: 4%;
+    }
+    #seilBahn {
+        max-width: 70vh;
+    }
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* header ---------------------------------------------------------- */
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        position:relative;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+    }
+
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:5%;
+        left: 0;
+        padding:0 5%;
+        color:rgba(54,104,154,1);
+        font:500 18.5vw Iceland;
+        text-align: center;
+        width: 100%;
+        /* color: orange; */
+
+    }
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 6vw OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        height:100vh;
+        padding-top: 10%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 70vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:120px;
+        width: 120px;
+        opacity: 0.8;
+        padding: 5px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        height:110vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+        padding-top: 5%;	
+    }
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        height:125vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternwind #rahmen {
+        max-width: 800px;
+        margin: auto;
+    }
+    #sternwind h2 {
+        padding-top:10%;
+    }
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        height:100vh;
+        padding-top: 10%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }
+    
+}
+
+
+/* Tablet Vertical mistyrose ----------------------------------------------------- */
+/* Tablet Vertical mistyrose --------------------------------------------------- */
+/* Tablet Vertical mistyrose ---------------------------------------------------- */
+/* Tablet Vertical mistyrose ---------------------------------------------------- */
+/* Tablet Vertical mistyrose ---------------------------------------------------- */
+/* Tablet Vertical mistyrose ---------------------------------------------------- */
+
+@media screen and (min-width: 651px) and (max-width: 850px) and (orientation: portrait) {
+    
+    #kreisbahn h1 {
+        /* color: mistyrose !important; */
+    }
+    .content {
+        top:180px !important;
+    }
+   #sternbild {
+        height: 70vh !important;
+        padding-top:15% !important;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 90%, rgba(0,219,255,0.6) 90%)!important;
+    }
+    #sternbild > figure {
+        max-width:80vh !important;
+    }
+    #sternbild > figure img {
+        height: 100px !important;
+        width: 100px !important;
+    }
+    #sternenstaub {
+        height: 80vh !important;
+        padding-top: 10%!important;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 90%, rgba(0,219,255,0.6) 90%)!important;
+    }
+    #sternwind {
+        height: 100vh !important;
+        padding-top: 0%!important;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 90%, rgba(0,219,255,0.6) 90%)!important;
+    }
+    #sternfeuer {
+        height: 70vh !important;
+        padding-top: 10%!important;
+        background: linear-gradient(355deg, rgba(0,219,255,0.6) 15%, transparent 15%, transparent 90%, rgba(0,219,255,0.6) 90%)!important;
+    }
+    
+}
+
+
+/* Desktop black --------------------------------------------------------------- */
+/* Desktop black ---------------------------------------------------------------- */
+/* Desktop black --------------------------------------------------------------- */
+/* Desktop black --------------------------------------------------------------- */
+/* Desktop black --------------------------------------------------------------- */
+/* Desktop black --------------------------------------------------------------- */
+
+@media screen and (min-width: 1121px) and (orientation: portrait) {
+    
+    .content {
+        position: relative;
+    }
+    .logo-wrap {
+        position: absolute;
+        left: 6%;
+        top: 10%;
+    }
+    #seilBahn {
+        max-width: 90%; 
+    }
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* header ---------------------------------------------------------- */
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+    }
+
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:5%;
+        left: 0;
+        padding: 0 1%;
+        color:rgba(54,104,154,1);
+        font:500 20.5vw Iceland;
+        text-align: center;
+        width: 100%;
+        /* color: black; */
+    }
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 6vw OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        height:100vh;
+        padding-top: 25%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 70vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:120px;
+        width: 120px;
+        opacity: 0.8;
+        padding: 3px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        height:100vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+        padding-top: 15%;	
+    }
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        height:100vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternwind #rahmen {
+        max-width: 800px;
+        margin: auto;
+    }
+    #sternwind h2 {
+        padding-top:15%;
+    }
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        height:100vh;
+        padding-top: 15%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }
+}
+
+
+/* Desktop green ---------------------------------------------------------------- */
+/* Desktop green ---------------------------------------------------------------- */
+
+@media screen and (min-width: 851px) and (max-width: 1120px) and (orientation: portrait) {
+
+    #kreisbahn h1 {
+        /* color: green !important; */
+    }
+    .content {
+        position: relative !important;
+    }
+    .logo-wrap {
+        position: absolute !important;
+        left: 0 !important;
+        top: 10% !important;
+    }
+    #seilBahn {
+        max-width: 100% !important;
+    }
+    #sternbild > figure {
+        width: 100vw !important;
+    }
+    #sternbild > figure img {
+        height:150px !important;
+        width: 150px !important;
+        opacity: 0.8;
+        padding: 10px !important;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+}
+
+
+/* Desktop yellow -------------------------------------------------------------- */
+/* Desktop yellow --------------------------------------------------------------- */
+/* Desktop yellow --------------------------------------------------------------- */
+/* Desktop yellow -------------------------------------------------------------- */
+/* Desktop yellow --------------------------------------------------------------- */
+/* Desktop yellow --------------------------------------------------------------- */
+@media screen and (min-width: 651px) and (max-width: 1120px) and (orientation: portrait) {
+
+    .content {
+        position: relative;
+    }
+    .logo-wrap {
+        position: absolute;
+        left: 1%;
+        top: 8%;
+    }
+    #seilBahn {
+        max-width: 100%;
+    }
+    #kreisbahn, #contain {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    /* header ---------------------------------------------------------- */
+    #kreisbahn {
+        height: 100%;
+        width:100%;
+        background-image: linear-gradient(25deg, rgba(0,219,255,0.6) 65%, rgba(255,20,20,0.0)50%);
+    }
+
+    #kreisbahn h1 {
+        position: absolute;
+        bottom:5%;
+        left: 0;
+        padding: 0 1%;
+        color:rgba(54,104,154,1);
+        font:500 20.5vw Iceland;
+        text-align: center;
+        width: 100%; 
+        /* color: yellow; */
+    }
+    /* main ------------------------------------------------------------- */
+    #contain h2 {
+        font: 500 6vw OrbitronRegular;
+        color: #36689A;
+        text-align: center;
+        padding:5%;
+    }
+    /* article 1 ------------------------------------------------------ */
+    #sternbild {
+        height:100vh;
+        padding-top: 25%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternbild > figure {
+        text-align: center;
+        max-width: 70vw;
+        margin:auto;
+    }
+    #sternbild > figure img {
+        height:120px;
+        width: 120px;
+        opacity: 0.8;
+        padding: 3px;
+        border-radius: 50%;
+        transition:all 0.4s;
+    }
+    #sternbild > figure img:hover {
+        opacity: 1;
+        border-radius:100%;
+    }
+    /* article 2 --------------------------------------------------------- */
+    #sternenstaub {
+        height:100vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+        padding-top: 15%;	
+    }
+    /* masterslider article 2 stylesheet-------------------------------------- */
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 1.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+    .jssorb031 {position:absolute;}
+    .jssorb031 .i {position:absolute;cursor:pointer;}
+    .jssorb031 .i .b {fill:#000;fill-opacity:0.5;stroke:#fff;stroke-width:1200;stroke-miterlimit:10;stroke-opacity:0.3;}
+    .jssorb031 .i:hover .b {fill:#fff;fill-opacity:.7;stroke:#000;stroke-opacity:.5;}
+    .jssorb031 .iav .b {fill:#fff;stroke:#000;fill-opacity:1;}
+    .jssorb031 .i.idn {opacity:.3;}
+
+
+    /* article 3 --------------------------------------------------------- */
+    #sternwind {
+        height:100vh;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+    #sternwind #rahmen {
+        max-width: 800px;
+        margin: auto;
+    }
+    #sternwind h2 {
+        padding-top:15%;
+    }
+    /* Anpassung für Slider ------------------------------------------*/
+    .thumb-box .thumbs li img.active {
+        border-color: red;
+    }
+    .thumb-box .thumbs li{
+        width:16.666%;
+    }
+    /* article 4 --------------- */
+    #sternfeuer {
+        height:100vh;
+        padding-top: 15%;
+        background: linear-gradient(351deg, rgba(0,219,255,0.6) 20%, transparent 20%, transparent 80%, rgba(0,219,255,0.6) 80%);
+    }
+
+    /* jssor slider loading skin spin css */
+    .jssorl-009-spin img {
+        animation-name: jssorl-009-spin;
+        animation-duration: 3.6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes jssorl-009-spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    .jssorb051 .i {position:absolute;cursor:pointer;}
+    .jssorb051 .i .b {fill:#fff;fill-opacity:0.5;}
+    .jssorb051 .i:hover .b {fill-opacity:.7;}
+    .jssorb051 .iav .b {fill-opacity: 1;}
+    .jssorb051 .i.idn {opacity:.3;}
+
+    .jssora051 {display:block;position:absolute;cursor:pointer;}
+    .jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+    .jssora051:hover {opacity:.8;}
+    .jssora051.jssora051dn {opacity:.5;}
+    .jssora051.jssora051ds {opacity:.3;pointer-events:none;
+    }
+    
+}

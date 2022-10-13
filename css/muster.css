@@ -1,0 +1,1642 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/* Mobile Horizontal ----- 20vh seilbahn ----------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+/* Mobile Horizontal -------------------------------------------------------- */
+
+@media screen and (max-width: 830px) and (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 3)
+    and (max-device-width: 812px)
+    and (orientation: landscape),
+    screen and (-webkit-min-device-pixel-ratio : 2)
+    and (max-device-width: 683px) /* 683*/
+    and (orientation: landscape)
+{
+        /* header ------------------------------------------- */
+    #musterbahn {
+        height: 100%;	
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    #musterbahn .backgnd {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 16%, transparent 16%); 
+        z-index: 30;
+        overflow: hidden;
+    }
+    #musterbahn #down:hover{
+        background: rgba(0,219,255,0.5);
+    }
+    #musterbahn #down a {
+        color:#FF1414;
+    }
+    #musterbahn > h1 {
+        position: absolute;
+        bottom:40px;
+        left:0;
+        padding:0 20%;
+        color:#FF1414;
+        font:500 10vw Iceland;
+        width: 100%;
+        z-index: 500;    
+    }
+
+    /* hover #topnav Farben verändern------------ */
+    #musterbahn #topnav ul li a:hover span {
+        color:#00DBFF;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#00DBFF;
+    }
+    #logo > a:hover {
+        color:#00DBFF;
+    }
+    /* Animation -------------------------------------------- */
+    
+    figure.diagonal {
+        overflow: hidden;
+    }
+    .diagonal {
+        height: 45vh;
+        width: 120vw;
+        background: linear-gradient(to bottom right, rgba(54,104,154,1) 49.5%, #555 49.5%, #555 50%, transparent 50%);
+    }
+    .diagonalTwo {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 69vh;
+        width: 150vw;
+        background: linear-gradient(to bottom right, transparent 49.6%, #555 49.7%, #555 50%, transparent 50%);
+        z-index: 32;
+    }
+    img[alt="Bahn Uno"]{
+        width: 20vh;
+        position:absolute;
+        top:0%;
+        left:0%;
+        -moz-animation-name: uno;
+        -webkit-animation-name: uno;
+        animation-name: uno;
+        -moz-animation-duration: 30s;
+        -webkit-animation-duration: 30s;
+        animation-duration: 30s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 33;
+    }
+    img[alt="Bahn Dos"]{
+        width: 20vh;
+        position:absolute;
+        top:0vh;
+        left:0vh;
+        -moz-animation-name: dos;
+        -webkit-animation-name: dos;
+        animation-name: dos;
+        -moz-animation-duration: 40s;
+        -webkit-animation-duration: 40s;
+        animation-duration: 40s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 34;
+
+    }
+    @keyframes uno {
+        0% {
+        -webkit-transform:translate(-16vw,46.5vh);
+        -moz-transform:translate(-16vw,46.5vh);
+        -ms-transform:translate(-16vw,46.5vh);
+        transform:translate(-16vw,46vh);
+        }
+        100% {
+        -webkit-transform:translate(100vw,3.5vh);
+        -moz-transform:translate(100vw,3.5vh);
+        -ms-transform:translate(100vw,3.5vh);
+        transform:translate(100vw,3vh);
+        }
+    }
+
+    @keyframes dos {
+        0% {
+        -webkit-transform:translate(100vw,18vh);
+        -moz-transform:translate(100vw,18vh);
+        -ms-transform:translate(100vw,18vh);
+        transform:translate(100vw,17.5vh);
+        }
+        100% {
+        -webkit-transform:translate(-16vw,71vh);
+        -moz-transform:translate(-16vw,71vh);
+        -ms-transform:translate(-16vw,71vh)
+        transform:translate(-16vw,70.5vh);
+        }
+    }
+    /* main --------------------------------------------------------------------------- */
+    /* eins ----------------------------------------------------------------------------- */
+    #eins{
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        position:relative;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 16%, transparent 16%, transparent 84%, rgba(54,104,154,1) 84%);
+    }
+    /* linie rel="stylesheet" -------------------- */
+    #eins .linelinks {
+        width: 150%;
+        font: 500 18px Orbitron500;
+        padding-top:6%;
+        color:#fff;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        position: absolute;
+        top:5%;
+        left:0;
+        transition: all 4s;
+        z-index: 250;
+    }
+    #eins .linelinks span {
+        color:#36689A;
+        opacity: 0.9;
+        text-shadow: 0px 2px #fff, -2px 0px #fff, 1px 0px #fff, 0px -1px #fff;
+    }
+    #eins .schieben {
+        left:-36%;
+    }
+    /* background span -------- */
+    #eins > p {
+        position:absolute;
+        bottom:15vh;
+        left:5%;
+        font:500 116px Advent Pro;
+        color:rgba(153,178,176,0.4);
+        z-index: 152;
+    }
+    #eins .links, #eins .rechts {
+        font: 500 16px Orbitron500;
+        line-height: 148%;
+        padding-top: 10%;
+    }
+    /* block links ------- */
+    #eins .links{
+        position:absolute;
+        top:15vh;
+        left:-45vw;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 150;
+    }
+    #eins .nachrechts{
+        left:20px;
+        opacity:1;
+    }
+    #eins .links{
+        color: #FF1414;
+        text-align: right;
+    }
+    #eins .links  > p:nth-of-type(4) > span   {
+        color:#00DBFF;
+    }
+    /* block rechts ------- */
+    #eins .rechts {
+        position:absolute;
+        top:15vh;
+        right:-45%;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 151;
+    }
+    #eins .nachlinks {
+        right:20px;
+        opacity:1;
+    }
+    #eins .rechts {
+        background: ;
+        text-align: left;
+        color:#00DBFF;
+    }
+    #eins .rechts > p:first-of-type > span {
+        font-size:16px;
+    }
+    #eins .rechts > p:nth-of-type(4) > span {
+        color:#FF1414;
+    }
+    /* zwei ------------------------------------------------------------------------ */
+    #zwei {
+        height: 100vh;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 16%, transparent 16%, transparent 84%, rgba(54,104,154,1) 84%);
+        position:relative;
+    }
+    /* px element -------------------- */
+    #zwei > p:nth-of-type(2){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 38px Iceland;
+        position: absolute;
+        bottom:120px;
+        left: 5vw;
+        z-index: 51;
+    }
+    /* rem element -------------------- */
+    #zwei > p:nth-of-type(1){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 99px Iceland;
+        position: absolute;
+        top:-8%;
+        right: 10%;
+        z-index: 52;
+    }
+    /* % element -------------------- */
+    #zwei > p:nth-of-type(3){
+        letter-spacing: 0.8vw;
+        color:rgba(153,178,176,0.4);
+        font:900 300px Iceland;
+        position: absolute;
+        bottom: 5px;
+        right: 0;
+        z-index: 50;
+    }
+    /* worte this -------------- */
+    #zwei > h2 {
+        color:#FF1414;
+        font:500 18px Advent Pro;
+        padding:5% 5%;
+        display: inline-block;
+        width:48%;
+    }
+    #zwei h2:nth-child(2) {
+        text-align: right;
+    }
+    /* container relative ---------------- */
+    #zwei #relative {
+        width: 100%;
+        padding: 1% 5% 5%;
+        position:relative;
+        font: 500 16px Orbitron500;
+        line-height: 7vh;
+        text-align: center;
+        
+    }
+    #zwei #relative > p:first-child {
+        color:#FF1414;
+        font-size: 18px;
+        letter-spacing: 1vw;
+    }
+    #zwei #relative > p:nth-child(2){
+        letter-spacing: 0.36vw;
+        color:#36689A;
+    }
+    #zwei #relative > p:nth-child(3){
+        letter-spacing: 0.8vw;
+        color:#00DBFF;
+    }
+    /* container absolute --------------------- */
+    #relative div {
+        background:#FF1414;
+        font: 500 14px Lekton;
+        width: 30%;
+        height: 30vh;;
+        text-align: center;
+        position:absolute;
+        color:#D7E1E0;
+        padding:1%;
+        line-height: 4vh;
+        transition: all 1s 0.8s;
+        z-index: 300;
+    }
+    #relative .obeneins{
+        top:55vh;
+        left:2.5%;
+        z-index: 60;
+    }
+    #relative .obenzwei{
+        top:55vh;
+        left: 35%;
+        z-index: 61;
+    }
+    #relative .obendrei{
+        top:55vh;
+        left: 67.5%;
+        z-index: 62;
+    }
+    #relative .nachoben{
+        -webkit-transform:translateY(-75%);
+        -moz-transform:translateY(-75%);
+        -ms-transform:translateY(-75%);
+        transform:translateY(-75%);
+
+    }
+
+    /* vier -------------------------------------------------------------------- */
+    #vier {
+        background: linear-gradient(355deg, rgba(54,104,154,1) 16%, transparent 16%, transparent 84%, rgba(54,104,154,1) 84%);
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        padding:25vh 1vw;
+    }
+    .hover{
+        display: -ms-flexbox; 
+		display: -webkit-flex; 
+        flex: 1 1 25%;
+        width:12%;
+        height: 150px;
+        margin:.2%;
+        background: #D7E1E0;
+        text-align: center;
+        padding:2% 0;
+        transition: all .5s;
+    }
+    .hover a {
+       text-decoration: none;
+        color:rgba(255,20,20,0.5);
+        font:500 16px Iceland;
+          
+    }
+    .hover:hover {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover + p {
+        -webkit-transform:translateY(-80px);
+        -moz-transform:translateY(-80px);
+        -ms-transform:translateY(-80px);
+        transform:translateY(-80px);
+        background: #00DBFF;
+    }
+    .hover:hover + p + p {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover a {
+        color:#FF1414;
+    }
+}
+
+
+
+/* Mobile ----- 10vh seilbahn ----------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+/* Mobile ---------------------------------------------------------------- */
+
+@media screen and (max-width: 730px) and (orientation: portrait),
+    screen and (device-pixel-ratio : 1.5) 
+    and (max-device-width: 400px)
+    and (orientation: portrait)
+{
+        /* header ------------------------------------------- */
+    #musterbahn {
+        height: 100%;	
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+    #musterbahn .backgnd {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(351deg, rgba(54,104,154,1) 15%, transparent 15%); 
+        z-index: 30;
+        overflow: hidden;
+    }
+    #musterbahn #down:hover{
+        background: rgba(0,219,255,0.5);
+    }
+    #musterbahn #down a {
+        color:#FF1414;
+    }
+    #musterbahn > h1 {
+        position: absolute;
+        bottom:13%;
+        left:0;
+        padding:0 2%;
+        color:#FF1414;
+        font:500 17vw Iceland;
+        text-align: center;
+        width: 100%;
+        z-index: 500; 
+        
+    }
+
+    /* hover #topnav Farben verändern------------ */
+    #musterbahn #topnav ul li a:hover span {
+        color:#00DBFF;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#00DBFF;
+    }
+    #logo > a:hover {
+        color:#00DBFF;
+    }
+    /* Animation -------------------------------------------- */
+    
+    figure.diagonal {
+        overflow: hidden;
+    }
+    .diagonal {
+        height: 45vh;
+        width: 120vw;
+        background: linear-gradient(to bottom right, rgba(54,104,154,1) 49.5%, #555 49.5%, #555 50%, transparent 50%);
+    }
+    .diagonalTwo {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 69vh;
+        width: 150vw;
+        background: linear-gradient(to bottom right, transparent 49.6%, #555 49.7%, #555 50%, transparent 50%);
+        z-index: 32;
+    }
+    img[alt="Bahn Uno"]{
+        width: 10vh;
+        position:absolute;
+        top:0%;
+        left:0%;
+        -moz-animation-name: uno;
+        -webkit-animation-name: uno;
+        animation-name: uno;
+        -moz-animation-duration: 35s;
+        -webkit-animation-duration: 35s;
+        animation-duration: 35s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 33;
+    }
+    img[alt="Bahn Dos"]{
+        width: 10vh;
+        position:absolute;
+        top:0vh;
+        left:0vh;
+        -moz-animation-name: dos;
+        -webkit-animation-name: dos;
+        animation-name: dos;
+        -moz-animation-duration: 45s;
+        -webkit-animation-duration: 45s;
+        animation-duration: 45s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 34;
+
+    }
+    @keyframes uno {
+        0% {
+        -webkit-transform:translate(-16vw,46.5vh);
+        -moz-transform:translate(-16vw,46.5vh);
+        -ms-transform:translate(-16vw,46.5vh);
+        transform:translate(-16vw,46.5vh);
+        }
+        100% {
+        -webkit-transform:translate(100vw,3.5vh);
+        -moz-transform:translate(100vw,3.5vh);
+        -ms-transform:translate(100vw,3.5vh);
+        transform:translate(100vw,3.5vh);
+        }
+    }
+
+    @keyframes dos {
+        0% {
+        -webkit-transform:translate(100vw,18vh);
+        -moz-transform:translate(100vw,18vh);
+        -ms-transform:translate(100vw,18vh);
+        transform:translate(100vw,18vh);
+        }
+        100% {
+        -webkit-transform:translate(-16vw,71vh);
+        -moz-transform:translate(-16vw,71vh);
+        -ms-transform:translate(-16vw,71vh)
+        transform:translate(-16vw,71vh);
+        }
+    }
+    /* main --------------------------------------------------------------------------- */
+    /* eins ----------------------------------------------------------------------------- */
+    #eins{
+        width: 100%;
+        overflow: hidden;
+        height: 80vh;
+        position:relative;
+        background: linear-gradient(351deg, rgba(54,104,154,1) 15%, transparent 15%, transparent 85%, rgba(54,104,154,1) 85%);
+    }
+    /* linie rel="stylesheet" -------------------- */
+    #eins .linelinks {
+        width: 150%;
+        font: 500 18px Orbitron500;
+        padding-top:8%;
+        color:#fff;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        position: absolute;
+        top:5%;
+        left:0;
+        transition: all 4s;
+        z-index: 250;
+    }
+    #eins .linelinks span {
+        color:#36689A;
+        opacity: 0.9;
+        text-shadow: 0px 2px #fff, -2px 0px #fff, 1px 0px #fff, 0px -1px #fff;
+    }
+    #eins .schieben {
+        left:-129%;
+    }
+    /* background span -------- */
+    #eins > p {
+        position:absolute;
+        bottom:15vh;
+        left:5%;
+        font:500 106px Advent Pro;
+        color:rgba(153,178,176,0.4);
+        z-index: 152;
+    }
+    #eins .links, #eins .rechts {
+        font: 500 16px Orbitron500;
+        line-height: 200%;
+    }
+    /* block links ------- */
+    #eins .links{
+        position:absolute;
+        top:18vh;
+        left:-45vw;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 150;
+    }
+    #eins .nachrechts{
+        left:0;
+        opacity:1;
+    }
+    #eins .links{
+        color: #FF1414;
+        text-align: right;
+    }
+    #eins .links  > p:nth-of-type(4) > span   {
+        color:#00DBFF;
+    }
+    /* block rechts ------- */
+    #eins .rechts {
+        position:absolute;
+        top:18vh;
+        right:-45%;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 151;
+    }
+    #eins .nachlinks {
+        right:0;
+        opacity:1;
+    }
+    #eins .rechts {
+        background: ;
+        text-align: left;
+        color:#00DBFF;
+    }
+    #eins .rechts > p:first-of-type > span {
+        font-size:16px;
+    }
+    #eins .rechts > p:nth-of-type(4) > span {
+        color:#FF1414;
+    }
+    /* zwei ------------------------------------------------------------------------ */
+    #zwei {
+        height: 100vh;
+        background: linear-gradient(351deg, rgba(54,104,154,1) 15%, transparent 15%, transparent 85%, rgba(54,104,154,1) 85%);
+        position:relative;
+    }
+    /* px element -------------------- */
+    #zwei > p:nth-of-type(2){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 38px Iceland;
+        position: absolute;
+        top:50px;
+        left: 5vw;
+        z-index: 51;
+    }
+    /* rem element -------------------- */
+    #zwei > p:nth-of-type(1){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 59px Iceland;
+        position: absolute;
+        top:-1%;
+        right: 10%;
+        z-index: 52;
+    }
+    /* % element -------------------- */
+    #zwei > p:nth-of-type(3){
+        letter-spacing: 0.8vw;
+        color:rgba(153,178,176,0.4);
+        font:900 300px Iceland;
+        position: absolute;
+        bottom:25vh;
+        right: 0;
+        z-index: 50;
+    }
+    /* worte this -------------- */
+    #zwei > h2 {
+        color:#FF1414;
+        font:500 18px Advent Pro;
+        padding:5% 5% 10%;
+        display: inline-block;
+        width:48%;
+    }
+    #zwei h2:nth-child(2) {
+        text-align: right;
+    }
+    /* container relative ---------------- */
+    #zwei #relative {
+        width: 100%;
+        padding: 15% 5% 45% 5%;
+        position:relative;
+        font: 500 16px Orbitron500;
+        line-height: 7vh;
+        text-align: center;
+        
+    }
+    #zwei #relative > p:first-child {
+        color:#FF1414;
+        font-size: 18px;
+        letter-spacing: 1vw;
+    }
+    #zwei #relative > p:nth-child(2){
+        letter-spacing: 0.36vw;
+        color:#36689A;
+    }
+    #zwei #relative > p:nth-child(3){
+        letter-spacing: 0.8vw;
+        color:#00DBFF;
+    }
+    /* container absolute --------------------- */
+    .displ {
+        display: none;
+    }
+    #relative div {
+        background:#FF1414;
+        font: 500 14px Lekton;
+        width: 30%;
+        height: 30vh;;
+        text-align: center;
+        position:absolute;
+        color:#D7E1E0;
+        padding:1%;
+        line-height: 4vh;
+        transition: all 1s 0.8s;
+        z-index: 300;
+    }
+    #relative .obeneins{
+        top:65vh;
+        left:2.5%;
+        z-index: 60;
+    }
+    #relative .obenzwei{
+        top:65vh;
+        left: 35%;
+        z-index: 61;
+    }
+    #relative .obendrei{
+        top:65vh;
+        left: 67.5%;
+        z-index: 62;
+    }
+    #relative .nachoben{
+        -webkit-transform:translateY(-75%);
+        -moz-transform:translateY(-75%);
+        -ms-transform:translateY(-75%);
+        transform:translateY(-75%);
+    }
+
+    /* vier -------------------------------------------------------------------- */
+    #vier {
+        background: linear-gradient(351deg, rgba(54,104,154,1) 15%, transparent 15%, transparent 85%, rgba(54,104,154,1) 85%);
+        height: 80vh;
+        display: flex;
+        width: 100%;
+        padding:19vh 2vw;
+    }
+    .hover{
+        display: -ms-flexbox; 
+		display: -webkit-flex; 
+        flex: 1 1 25%;
+        width:12%;
+        height: 200px;
+        margin:.2%;
+        background: #D7E1E0;
+        text-align: center;
+        padding:2% 0;
+        transition: all .5s;
+    }
+    .hover a {
+       text-decoration: none;
+        color:rgba(255,20,20,0.5);
+        font:500 16px Iceland;
+          
+    }
+    .hover:hover {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover + p {
+        -webkit-transform:translateY(-80px);
+        -moz-transform:translateY(-80px);
+        -ms-transform:translateY(-80px);
+        transform:translateY(-80px);
+        background: #00DBFF;
+    }
+    .hover:hover + p + p {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover a {
+        color:#FF1414;
+    }
+}
+
+
+/* Desktop/Tablet Vertical ----- 12vh seilbahn -------------------------------- */
+/* Desktop/Tablet Vertical ------------------------------------------ */
+/* Desktop/Tablet Vertical ------------------------------------------ */
+/* Desktop/Tablet Vertical ------------------------------------------- */
+/* Desktop/Tablet Vertical ----------------------------------------- */
+
+@media screen and (min-width:701px) and (orientation: portrait) {
+    
+    /* header ------------------------------------------- */
+    #musterbahn {
+        height: 100%;	
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+    }
+    #musterbahn .backgnd {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%); 
+        z-index: 30;
+        overflow: hidden;
+    }
+    #musterbahn #down:hover{
+        background: rgba(0,219,255,0.5);
+    }
+    #musterbahn #down a {
+        color:#FF1414;
+    }
+    #musterbahn > h1 {
+        position: absolute;
+        bottom:10%;
+        left:0%;
+        text-align: center;
+        padding:0 1%;
+        color:#FF1414;
+        font:500 15vw Iceland;
+        text-align: center;
+        width: 100%;
+        z-index: 500;    
+    }
+
+    /* hover #topnav Farben verändern------------ */
+    #musterbahn #topnav ul li a:hover span {
+        color:#00DBFF;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#00DBFF;
+    }
+    #logo > a:hover {
+        color:#00DBFF;
+    }
+    
+    
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    
+    figure.diagonal {
+        overflow: hidden;
+    }
+    .diagonal {
+        height: 45vh;
+        width: 120vw;
+        background: linear-gradient(to bottom right, rgba(54,104,154,1) 49.5%, #555 49.5%, #555 50%, transparent 50%);
+    }
+    .diagonalTwo {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 69vh;
+        width: 150vw;
+        background: linear-gradient(to bottom right, transparent 49.6%, #555 49.7%, #555 50%, transparent 50%);
+        z-index: 32;
+    }
+    img[alt="Bahn Uno"]{
+        width: 12vh;
+        position:absolute;
+        top:0%;
+        left:0%;
+        -moz-animation-name: uno;
+        -webkit-animation-name: uno;
+        animation-name: uno;
+        -moz-animation-duration: 35s;
+        -webkit-animation-duration: 35s;
+        animation-duration: 35s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 3300;
+    }
+    img[alt="Bahn Dos"]{
+        width: 12vh;
+        position:absolute;
+        top:0vh;
+        left:0vh;
+        -moz-animation-name: dos;
+        -webkit-animation-name: dos;
+        animation-name: dos;
+        -moz-animation-duration: 45s;
+        -webkit-animation-duration: 45s;
+        animation-duration: 45s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 34;
+
+    }
+    @keyframes uno {
+        0% {
+        -webkit-transform:translate(-16vw,46.5vh);
+        -moz-transform:translate(-16vw,46.5vh);
+        -ms-transform:translate(-16vw,46.5vh);
+        transform:translate(-16vw,46.5vh);
+        }
+        100% {
+        -webkit-transform:translate(100vw,3.5vh);
+        -moz-transform:translate(100vw,3.5vh);
+        -ms-transform:translate(100vw,3.5vh);
+        transform:translate(100vw,3.5vh);
+        }
+    }
+
+    @keyframes dos {
+        0% {
+        -webkit-transform:translate(114vw,18vh);
+        -moz-transform:translate(114vw,18vh);
+        -ms-transform:translate(100vw,18vh);
+        transform:translate(100vw,18vh);
+        }
+        100% {
+        -webkit-transform:translate(-14vw,71vh);
+        -moz-transform:translate(-14vw,71vh);
+        -ms-transform:translate(-14vw,71vh);
+        transform:translate(-16vw,71vh);
+        }
+    }
+    /* main --------------------------------------------------------------------------- */
+    /* eins ----------------------------------------------------------------------------- */
+    #eins{
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        position:relative;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+    }
+    /* linie rel="stylesheet" -------------------- */
+    #eins .linelinks {
+        width: 150%;
+        font: 500 3vw Orbitron500;
+        padding-top:5%;
+        color:#fff;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        position: absolute;
+        top:5%;
+        left:0;
+        transition: all 4s;
+        z-index: 250;
+    }
+    #eins .linelinks span {
+        color:#36689A;
+        opacity: 0.9;
+        text-shadow: 0px 2px #fff, -2px 0px #fff, 1px 0px #fff, 0px -1px #fff;
+    }
+    #eins .schieben {
+        left:-52%;
+    }
+    /* background span -------- */
+    #eins > p {
+        position:absolute;
+        bottom:15vh;
+        left:5%;
+        font:500 30vw Advent Pro;
+        color:rgba(153,178,176,0.4);
+        z-index: 152;
+    }
+    #eins .links, #eins .rechts {
+        font: 500 2.5vw Orbitron500;
+        font-size:;
+        line-height: 250%;
+    }
+    /* block links ------- */
+    #eins .links{
+        position:absolute;
+        top:30vh;
+        left:-45vw;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 150;
+    }
+    #eins .nachrechts{
+        left:0;
+        opacity:1;
+    }
+    #eins .links{
+        color: #FF1414;
+        text-align: right;
+    }
+    #eins .links  > p:nth-of-type(4) > span   {
+        color:#00DBFF;
+    }
+    /* block rechts ------- */
+    #eins .rechts {
+        position:absolute;
+        top:30vh;
+        right:-45%;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 151;
+    }
+    #eins .nachlinks {
+        right:0;
+        opacity:1;
+    }
+    #eins .rechts {
+        background: ;
+        text-align: left;
+        color:#00DBFF;
+    }
+    #eins .rechts > p:first-of-type > span {
+        font-size:1.5vw;
+    }
+    #eins .rechts > p:nth-of-type(4) > span {
+        color:#FF1414;
+    }
+    /* zwei ------------------------------------------------------------------------ */
+    #zwei {
+        height: 100vh;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+        position:relative;
+    }
+    /* px element -------------------- */
+    #zwei > p:nth-of-type(2){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 8vw Iceland;
+        position: absolute;
+        top:4%;
+        left: 5vw;
+        z-index: 51;
+    }
+    /* rem element -------------------- */
+    #zwei > p:nth-of-type(1){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 18vw Iceland;
+        position: absolute;
+        top:-9%;
+        right: 10%;
+        z-index: 52;
+    }
+    /* % element -------------------- */
+    #zwei > p:nth-of-type(3){
+        letter-spacing: 0.8vw;
+        color:rgba(153,178,176,0.4);
+        font:900 60vw Iceland;
+        position: absolute;
+        bottom:8vh;
+        right: 0;
+        z-index: 50;
+    }
+    /* worte this -------------- */
+    #zwei > h2 {
+        color:#FF1414;
+        font:500 3vw Advent Pro;
+        padding:5% 20%;
+        display: inline-block;
+        width:49%;
+    }
+    #zwei h2:nth-child(2) {
+        text-align: right;
+    }
+    /* container relative ---------------- */
+    #zwei #relative {
+        width: 100%;
+        padding: 8% 5% 60%;
+        position:relative;
+        font: 500 200% Orbitron500;
+        font-size:3vw;
+        line-height: 7vh;
+        text-align: center;
+        overflow:hidden;
+    }
+    #zwei #relative > p:first-child {
+        color:#FF1414;
+        font-size: 4.1vw;
+        letter-spacing: 1vw;
+    }
+    #zwei #relative > p:nth-child(2){
+        letter-spacing: 0.36vw;
+        color:#36689A;
+    }
+    #zwei #relative > p:nth-child(3){
+        letter-spacing: 0.8vw;
+        color:#00DBFF;
+    }
+    /* container absolute --------------------- */
+    #relative div {
+        background:#FF1414;
+        font: 500 1.7vw Orbitron500;
+        width: 30%;
+        height: 20vh;;
+        text-align: center;
+        position:absolute;
+        color:#D7E1E0;
+        padding:1%;
+        line-height: 4vh;
+        transition: all 1s 0.8s;
+        z-index: 300;
+    }
+    #relative .obeneins{
+        top:50vh;
+        left:2.5%;
+        z-index: 60;
+    }
+    #relative .obenzwei{
+        top:50vh;
+        left: 35%;
+        z-index: 61;
+    }
+    #relative .obendrei{
+        top:50vh;
+        left: 67.5%;
+        z-index: 62;
+    }
+    #relative .nachoben{
+        -webkit-transform:translateY(-35%);
+        -moz-transform:translateY(-35%);
+        -ms-transform:translateY(-35%);
+        transform:translateY(-35%);
+
+    }
+
+    /* vier -------------------------------------------------------------------- */
+    #vier {
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        padding:30vh 2vw;
+    }
+    .hover{
+        display: -ms-flexbox; /* IE 10 */
+		display: -webkit-flex; /* Safari 8, Android 4.2,4.3, Blackberry 7 */
+        flex: 1 1 25%;
+        width:12%;
+        height: 280px;
+        margin:.2%;
+        background: #D7E1E0;
+        text-align: center;
+        padding:2% 0;
+        transition: all .5s;
+    }
+    .hover a {
+       text-decoration: none;
+        color:rgba(255,20,20,0.5);
+        font:500 100% Iceland;
+        font-size:3vw;   
+    }
+    .hover:hover {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover + p {
+        -webkit-transform:translateY(-80px);
+        -moz-transform:translateY(-80px);
+        -ms-transform:translateY(-80px);
+        transform:translateY(-80px);
+        background: #00DBFF;
+    }
+    .hover:hover + p + p {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover a {
+        color:#FF1414;
+    }
+}
+
+
+
+/* Desktop/Tablet Horizontal --- 18vh seilbahn - antes 15% -------------------------- */
+/* Desktop/Tablet Horizontal --------------------------------------- */
+/* Desktop/Tablet Horizontal --------------------------------------- */
+/* Desktop/Tablet Horizontal ---------------------------------------- */
+/* Desktop/Tablet Horizontal ---------------------------------------- */
+
+@media screen and (min-width:831px) and (orientation: landscape) {
+    
+    /* header ------------------------------------------- */
+    #musterbahn {
+        height: 100%;	
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+
+    }
+    #musterbahn .backgnd {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%); 
+        z-index: 30;
+        overflow: hidden;
+    }
+    #musterbahn #down:hover{
+        background: rgba(0,219,255,0.5);
+    }
+    #musterbahn #down a {
+        color:#FF1414;
+    }
+    #musterbahn > h1 {
+        position: absolute;
+        bottom:10%;
+        left:0%;
+        text-align: center;
+        padding:0 1%;
+        color:#FF1414;
+        font:500 15vw Iceland;
+        text-align: center;
+        width: 100%;
+        z-index: 500;    
+    }
+
+    /* hover #topnav Farben verändern------------ */
+    #musterbahn #topnav ul li a:hover span {
+        color:#00DBFF;
+    }
+    #hauptnav > h2:hover > label:after {
+        color:#00DBFF;
+    }
+    #logo > a:hover {
+        color:#00DBFF;
+    }
+    
+    
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    /* Animation -------------------------------------------- */
+    
+    figure.diagonal {
+        overflow: hidden;
+    }
+    .diagonal {
+        height: 45vh;
+        width: 120vw;
+        background: linear-gradient(to bottom right, rgba(54,104,154,1) 49.5%, #555 49.5%, #555 50%, transparent 50%);
+    }
+    .diagonalTwo {
+        position:absolute;
+        top:0;
+        left:0;
+        height: 69vh;
+        width: 150vw;
+        background: linear-gradient(to bottom right, transparent 49.6%, #555 49.7%, #555 50%, transparent 50%);
+        z-index: 32;
+    }
+    img[alt="Bahn Uno"]{
+        width: 18vh;
+        position:absolute;
+        top:0%;
+        left:0%;
+        -moz-animation-name: uno;
+        -webkit-animation-name: uno;
+        animation-name: uno;
+        -moz-animation-duration: 35s;
+        -webkit-animation-duration: 35s;
+        animation-duration: 35s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 33;
+    }
+    img[alt="Bahn Dos"]{
+        width: 18vh;
+        position:absolute;
+        top:0vh;
+        left:0vh;
+        -moz-animation-name: dos;
+        -webkit-animation-name: dos;
+        animation-name: dos;
+        -moz-animation-duration: 45s;
+        -webkit-animation-duration: 45s;
+        animation-duration: 45s;
+        -moz-animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        z-index: 34;
+
+    }
+    @keyframes uno {
+        0% {
+        -webkit-transform:translate(-16vw,46.5vh);
+        -moz-transform:translate(-16vw,46.5vh);
+        -ms-transform:translate(-16vw,46.5vh);
+        transform:translate(-16vw,46.5vh);
+        }
+        100% {
+        -webkit-transform:translate(100vw,3.5vh);
+        -moz-transform:translate(100vw,3.5vh);
+        -ms-transform:translate(100vw,3.5vh);
+        transform:translate(100vw,3.5vh);
+        }
+    }
+
+    @keyframes dos {
+        0% {
+        -webkit-transform:translate(114vw,18vh);
+        -moz-transform:translate(114vw,18vh);
+        -ms-transform:translate(100vw,18vh);
+        transform:translate(100vw,18vh);
+        }
+        100% {
+        -webkit-transform:translate(-14vw,71vh);
+        -moz-transform:translate(-14vw,71vh);
+        -ms-transform:translate(-14vw,71vh);
+        transform:translate(-16vw,71vh);
+        }
+    }
+    /* main --------------------------------------------------------------------------- */
+    /* eins ----------------------------------------------------------------------------- */
+    #eins{
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        position:relative;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+    }
+    /* linie rel="stylesheet" -------------------- */
+    #eins .linelinks {
+        width: 150%;
+        font: 500 3vw Orbitron500;
+        padding-top:5%;
+        color:#fff;
+        opacity: 0.9;
+        text-shadow: 0px 2px #36689A, -2px 0px #36689A, 1px 0px #36689A, 0px -1px #36689A;
+        position: absolute;
+        top:5%;
+        left:0;
+        transition: all 4s;
+        z-index: 250;
+    }
+    #eins .linelinks span {
+        color:#36689A;
+        opacity: 0.9;
+        text-shadow: 0px 2px #fff, -2px 0px #fff, 1px 0px #fff, 0px -1px #fff;
+    }
+    #eins .schieben {
+        left:-52%;
+    }
+    /* background span -------- */
+    #eins > p {
+        position:absolute;
+        bottom:15vh;
+        left:5%;
+        font:500 30vw Advent Pro;
+        color:rgba(153,178,176,0.4);
+        z-index: 152;
+    }
+    #eins .links, #eins .rechts {
+        font: 500 2.5vw Orbitron500;
+        font-size:;
+        line-height: 250%;
+    }
+    /* block links ------- */
+    #eins .links{
+        position:absolute;
+        top:30vh;
+        left:-45vw;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 150;
+    }
+    #eins .nachrechts{
+        left:0;
+        opacity:1;
+    }
+    #eins .links{
+        color: #FF1414;
+        text-align: right;
+    }
+    #eins .links  > p:nth-of-type(4) > span   {
+        color:#00DBFF;
+    }
+    /* block rechts ------- */
+    #eins .rechts {
+        position:absolute;
+        top:30vh;
+        right:-45%;
+        width: 44%;
+        opacity:1;
+        transition: all 2s 0.5s;
+        z-index: 151;
+    }
+    #eins .nachlinks {
+        right:0;
+        opacity:1;
+    }
+    #eins .rechts {
+        background: ;
+        text-align: left;
+        color:#00DBFF;
+    }
+    #eins .rechts > p:first-of-type > span {
+        font-size:1.5vw;
+    }
+    #eins .rechts > p:nth-of-type(4) > span {
+        color:#FF1414;
+    }
+    /* zwei ------------------------------------------------------------------------ */
+    #zwei {
+        height: 100vh;
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+        position:relative;
+    }
+    /* px element -------------------- */
+    #zwei > p:nth-of-type(2){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 8vw Iceland;
+        position: absolute;
+        top:4%;
+        left: 5vw;
+        z-index: 51;
+    }
+    /* rem element -------------------- */
+    #zwei > p:nth-of-type(1){
+        letter-spacing: 0.8vw;
+        color:rgba(0,219,255,0.5);
+        font:900 18vw Iceland;
+        position: absolute;
+        top:-9%;
+        right: 10%;
+        z-index: 52;
+    }
+    /* % element -------------------- */
+    #zwei > p:nth-of-type(3){
+        letter-spacing: 0.8vw;
+        color:rgba(153,178,176,0.4);
+        font:900 60vw Iceland;
+        position: absolute;
+        bottom:8vh;
+        right: 0;
+        z-index: 50;
+    }
+    /* worte this -------------- */
+    #zwei > h2 {
+        color:#FF1414;
+        font:500 3vw Advent Pro;
+        padding:5% 20%;
+        display: inline-block;
+        width:49%;
+    }
+    #zwei h2:nth-child(2) {
+        text-align: right;
+    }
+    /* container relative ---------------- */
+    #zwei #relative {
+        width: 100%;
+        padding: 8% 5% 60%;
+        position:relative;
+        font: 500 200% Orbitron500;
+        font-size:3vw;
+        line-height: 7vh;
+        text-align: center;
+        overflow:hidden;
+    }
+    #zwei #relative > p:first-child {
+        color:#FF1414;
+        font-size: 4.1vw;
+        letter-spacing: 1vw;
+    }
+    #zwei #relative > p:nth-child(2){
+        letter-spacing: 0.36vw;
+        color:#36689A;
+    }
+    #zwei #relative > p:nth-child(3){
+        letter-spacing: 0.8vw;
+        color:#00DBFF;
+    }
+    /* container absolute --------------------- */
+    #relative div {
+        background:#FF1414;
+        font: 500 1.7vw Orbitron500;
+        width: 30%;
+        height: 20vh;;
+        text-align: center;
+        position:absolute;
+        color:#D7E1E0;
+        padding:1%;
+        line-height: 4vh;
+        transition: all 1s 0.8s;
+        z-index: 300;
+    }
+    #relative .obeneins{
+        top:50vh;
+        left:2.5%;
+        z-index: 60;
+    }
+    #relative .obenzwei{
+        top:50vh;
+        left: 35%;
+        z-index: 61;
+    }
+    #relative .obendrei{
+        top:50vh;
+        left: 67.5%;
+        z-index: 62;
+    }
+    #relative .nachoben{
+        -webkit-transform:translateY(-35%);
+        -moz-transform:translateY(-35%);
+        -ms-transform:translateY(-35%);
+        transform:translateY(-35%);
+
+    }
+
+    /* vier -------------------------------------------------------------------- */
+    #vier {
+        background: linear-gradient(355deg, rgba(54,104,154,1) 20%, transparent 20%, transparent 80%, rgba(54,104,154,1) 80%);
+        height: 100vh;
+        display: flex;
+        width: 100%;
+        padding:30vh 2vw;
+    }
+    .hover{
+        display: -ms-flexbox; /* IE 10 */
+		display: -webkit-flex; /* Safari 8, Android 4.2,4.3, Blackberry 7 */
+        flex: 1 1 25%;
+        width:12%;
+        height: 280px;
+        margin:.2%;
+        background: #D7E1E0;
+        text-align: center;
+        padding:2% 0;
+        transition: all .5s;
+    }
+    .hover a {
+       text-decoration: none;
+        color:rgba(255,20,20,0.5);
+        font:500 100% Iceland;
+        font-size:3vw;   
+    }
+    .hover:hover {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover + p {
+        -webkit-transform:translateY(-80px);
+        -moz-transform:translateY(-80px);
+        -ms-transform:translateY(-80px);
+        transform:translateY(-80px);
+        background: #00DBFF;
+    }
+    .hover:hover + p + p {
+        -webkit-transform:translateY(-50px);
+        -moz-transform:translateY(-50px);
+        -ms-transform:translateY(-50px);
+        transform:translateY(-50px);
+        background: rgba(0,219,255,0.5);
+    }
+    .hover:hover a {
+        color:#FF1414;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .hover {
+        height: 500px;
+    }
+    img[alt="Bahn Uno"]{
+        width: 15vh;
+    }
+    img[alt="Bahn Dos"]{
+        width: 15vh;
+    }
+}
+
+/* Tablet Horizontal extra-large ------------------------------------------ */
+/* Tablet Horizontal extra-large ------------------------------------------ */
+/* Tablet Horizontal extra-large ------------------------------------------
+*/
+@media screen and (min-width: 1801px) and (orientation: landscape){
+    img[alt="Bahn Uno"]{
+        width: 15vh;
+    }
+    img[alt="Bahn Dos"]{
+        width: 15vh;
+    }
+    #musterbahn h1 {
+        font-size: 310px !important;
+    }
+}
+
